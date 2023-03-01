@@ -13,7 +13,7 @@ function CoverSection() {
                 </div>
                 <div className="second-row">
                     <div className="title">
-                        <a href="me">
+                        <a href="/#/me">
                         <span id="title">Software Developer, Researcher, Ametur Writer, Photographer</span>
                         <span >
                         <FontAwesomeIcon className="faicon" icon={faCircleArrowRight} />
