@@ -1,0 +1,114 @@
+.Contact{
+    display: block;
+    max-width: 1080px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.info-section{
+    display: flex;
+    border-radius: 10px;
+}
+
+.info-image {
+    margin-right: 30px;
+    height: 600px;
+    width: 480px;
+    background-image: url("./../images/contact-info-img.jpg");
+    background-size: cover;
+    border-radius: 10px;
+}
+
+/* Form  */
+.form {
+    font-family: Optima, "Comic Sans MS", "Comic Sans", cursive, 
+                    Roboto, Helvetica, Arial, sans-serif;
+    color: var(--primary);
+
+    width: 600px;
+    margin-left: 30px;
+    padding-left: 20px;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+}
+
+.form h1{
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+.form h2 {
+    padding-left: 10px;
+    font-size: 1.0rem;
+    letter-spacing: 2px;
+}
+
+.form h2:hover { color: var(--secondary);}
+
+.form .form-first-row{
+    display: flex;
+    flex: 0 0 auto;
+}
+
+.form .form-first-row .form-email{
+    margin-left: 40px;
+}
+
+.form .form-control{
+    font-family: Optima, "Comic Sans MS", "Comic Sans", cursive, 
+                    Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--secondary);
+    border: 2px solid var(--primary);
+    border-radius:  8px;
+    padding-left:   10px;
+    padding-top:   8px;
+    padding-bottom:   3px;
+
+    font-size: 15px;
+}
+
+
+
+#name {
+    width: 200px;
+}
+#email {
+    width: 230px;
+}
+
+#subject{
+    width: 480px;
+}
+
+#message { 
+    width: 500px;
+    height: 220px;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.form-fourth-row .sendButton {
+    background-color: var(--background);
+    color: var(--primary);
+    padding: 10px 10px;
+    margin-top: 20px;
+
+    border-radius: 10px;
+
+    font-family: Optima, "Comic Sans MS", "Comic Sans", cursive, 
+                    Roboto, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    border: 15px var(--primary);
+    box-shadow: 0px 0px 5px var(--primary);
+}
+
+.form-fourth-row .sendButton:hover {
+    background-color: var(--primary);
+    color: var(--accent);
+}

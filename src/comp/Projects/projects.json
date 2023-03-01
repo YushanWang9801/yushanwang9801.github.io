@@ -1,0 +1,45 @@
+[
+    { 
+        "name": "Retinal Fundus Age Estimation", 
+        "short_desc": "Age Estimation using Retinal Fundus and Segmented Vessel Images with Deep Learning Algorithm",
+        "tags": ["#Age Estimation", "#Deep Learning", "#Python"],
+        "desc": "I recently published paper 'Age Estimation using Retinal Fundus and Segmented Vessel Images with Deep Learning Algorithm' in the ARVO 2023. We use eye scan images to predict patients chronologic age.",
+        "source_code_url" : "#",
+        "coverImage" : "/project_images/Age_Estimation.png"
+    },{
+        "name": "Brick Riddle - First Person VR Game", 
+        "short_desc": "Do you like solving riddles? Do you like building stuff? We got you covered. Welcome to Brick Riddle.",
+        "tags": ["#VR", "#Brick Riddle", "#Unity"],
+        "desc": "Welcome to Brick Riddle. In this game, every player could become either a “Word-builder” or a “Riddle Solver”. Want to know more? Check out our following game design.",
+        "source_code_url" : "#",
+        "coverImage" : "/project_images/VR_brick_Riddle.png"
+    },{
+        "name": "Real-Time Age Estimation System", 
+        "short_desc": "'Real-Time Age Estimation System Based on Convolutional Neural Network', ICMLCA 2021",
+        "tags": ["#Age Estimation", "#Deep Learning", "#Python"],
+        "desc": "I and Huang developed real-time age prediction system using CNN and predict ages from human facial images and we published our paper on ICMLCA",
+        "source_code_url" : "#",
+        "coverImage" : "/project_images/Age_App.png"
+    }, {
+        "name": "Formula1 In Schools", 
+        "short_desc": "We build the 8th fastest car in the FIS International Final and won the 2nd place in the National Final ",
+        "tags": ["#Formula 1", "#FIS 2016", "#CFR Racing"],
+        "desc": "F1 in Schools is an international STEM challenge to design and manufacture a miniature car out of the official F1 Model Block using CAD/CAM design tools. We won the 2nd place in the National Final",
+        "source_code_url" : "#",
+        "coverImage" : "/project_images/F1_In_School.png"
+    }, {
+        "name": "COVID Face Mask Detector", 
+        "short_desc": "Developed an Live-Streaming mask detector for the COVID",
+        "tags": ["#Deep Learning", "#Computer Vision", "#Python"],
+        "desc": "Using Caffe-DNN for face detection technologyAnd VGG-16 model for the training on mask/no_mask classifier and OpenCV for live-streaming detector",
+        "source_code_url" : "#",
+        "coverImage" : "/project_images/Age_Estimation.png"
+    },{
+        "name": "Empirical Comparison on ML Algorithms", 
+        "short_desc": "Based on previous ML study, I developed an empirical study on supervised learning algorithms",
+        "tags": ["#Machine Learning", "#Python"],
+        "desc": "It presents a ranking of four supervised learning methods: SVMs, Logistic Regression, Decision Tree, KNN, Gaussian Naive Bayes, bagging classifier. The experiment uses four data sets with different magnitudes as a variety of performance criteria to evaluate the six learning methods",
+        "source_code_url" : "#",
+        "coverImage" : "/project_images/Age_Estimation.png"
+    }                  
+]

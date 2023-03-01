@@ -1,0 +1,63 @@
+@font-face {
+  font-family: Optima;
+  src: url("./fonts/OPTIMA.TTF");
+}
+
+body {
+  margin: 0;
+  font-family: Optima, "Comic Sans MS", "Comic Sans", cursive, 
+  Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
+}
+
+code {
+  font-family: Optima, "Comic Sans MS", "Comic Sans", cursive, 
+  Roboto, Helvetica, Arial, sans-serif;
+}
+
+:root{
+  --background: #111111;
+  --secondary: #c6c6c6;
+  --primary: #00A19C;
+  --error: #7d1236;
+  --error: #811e3f;
+
+  --accent: #3d3d3d;
+
+  --merc-silver: #c6c6c6;
+  --merc-red:  #7d1236;
+  --merc-red: rgba(129, 30,63, 0.4);
+
+  --medium: #fff;
+  --blur-secondary: #72D0CE;
+  --blur-background: rgba(17, 17, 17, 0.4);
+
+}
+
+[data-theme="light"] {
+  --background: #f2f4f2;
+  --secondary: #3d3d3d;
+  --primary: #00A19C;
+  --error: #7d1236;
+  --accent: #ebeaee;
+  
+  --medium: #111111;
+  /* --blur-secondary: #02002F;
+  --blur-background: rgba(242, 244, 242, 0.4); */
+  --blur-secondary: #72D0CE;
+  --blur-background: rgba(242, 244, 242, 0.4);
+}
+
+.App{
+  max-width: 1080px;
+  margin: 0 auto;
+  color: var(--secondary);
+  background-color: var(--background);
+}
+
+::selection {
+  background: var(--merc-red);
+  color: #ebeaee;
+}

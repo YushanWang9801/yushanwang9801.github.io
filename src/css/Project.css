@@ -1,0 +1,115 @@
+/* ProjectTitle */
+.ProjectTitle {
+    font-family: Optima, "Comic Sans MS", "Comic Sans", cursive, 
+                    Roboto, Helvetica, Arial, sans-serif;
+    margin-left: 30px;
+}
+
+.ProjectTitle h2{
+    margin-left: 30px;
+    margin-top: 60px;
+    font-size: 2.6rem;
+    color: var(--primary);
+    margin-bottom: 30px;
+    line-height: 1.05em;
+    font-weight: 100;
+    letter-spacing: normal;
+}
+
+.ProjectTitle h2:hover{
+    color: var(--secondary);
+}
+
+.ProjectTitle span{
+    margin-left: 30px;
+    color: var(--secondary);
+    font-size: 1.6rem;
+    justify-content: left;
+    display: flex;
+}
+
+.project-grid{  
+    margin: 50px 0px 50px -60px;
+    display: grid;
+    justify-content: space-evenly;
+    gap: 50px;
+    grid-template-columns: 440px 440px;
+}
+
+/* ProjectCard */
+.project-grid .ProjectCard .card {
+  display: inline-block;
+  font-weight: bold;
+  position: relative;
+  width: 440px;
+  height: 220px;
+}
+
+.project-grid .ProjectCard .card {
+  padding: 30px;
+  border: 2px solid linear-gradient(var(--accent), var(--background));;
+  border-radius: 10px;
+  background: linear-gradient(var(--accent), var(--background), var(--accent));
+  text-decoration: none;
+  color: var(--secondary);
+  display: inline-block;
+  transition: 0.25s ease;
+}
+
+.project-grid .ProjectCard .card:hover {
+  transform: translate(-30px, -30px);
+  border-color: var(--primary);
+}
+
+.project-grid .ProjectCard .card:hover .card--display { display: none; }
+.project-grid .ProjectCard .card .card--display h2 {  margin-top: 60px; }
+.project-grid .ProjectCard .card .card--display h3 { 
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color:var(--primary); 
+}
+
+.project-grid .ProjectCard .card .card--display .hashtag {margin-top: 30px;}
+
+.project-grid .ProjectCard .card .card--display span { 
+    margin-right: 20px;
+    color: var(--secondary); 
+    padding: 5px 10px;
+    border: 2px solid var(--primary);
+    background-color: var(--accent);
+    border-radius: 20px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+
+.project-grid .ProjectCard .card:hover .card--hover { display: block; }
+.project-grid .ProjectCard .card .card--hover { display: none;}
+
+.project-grid .ProjectCard .card .card--hover h2 {
+    margin-top: 30px;
+    color: var(--primary);
+}
+
+.project-grid .ProjectCard .card .card--hover p {
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.project-grid .ProjectCard .card .card--hover .link {
+    font-weight: bold;
+    font-size: 1em;
+    color: var(--primary);
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 50px 10px 0px; 
+}
+
+.project-grid .ProjectCard .card  .card--hover .faicon {
+    font-weight: normal;
+    padding-left: 3px;
+    padding-top: 1px;
+}

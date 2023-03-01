@@ -1,0 +1,170 @@
+.Blog-grid {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+/* BlogCard */
+.BlogCard {
+    width: 980px;
+    height: 320px;
+    margin: 20px auto;
+    display: inline-flex;
+}
+
+.BlogCard .left-section{
+    width: 400px;
+    height: 320px;
+    display: inline-flex;
+}
+
+.BlogCard .left-section h2 { font-size: 18px;}
+.BlogCard .left-section h2:hover{ color: var(--primary);  }
+.BlogCard .time-section {
+    width: 100px;
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+.BlogCard .title-section {
+    width: 250px;
+    padding-top: 30px;
+    text-align: left;
+}
+
+
+.BlogCard .card-section{
+    --cover-img: url("#"); 
+    --width: 560px;
+    --height: 315px;
+    --half-wid: 280px;
+    --trans-color: linear-gradient(var(--accent), var(--background), var(--accent));
+}
+
+.BlogCard .card-section{
+    position: relative;
+    display: flex;
+    width: var(--width);
+    height: var(--height);
+    margin: 0px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 20px 8px var(--trans-color);
+}
+
+.BlogCard .card-section .content {
+    position: absolute;
+    text-align: justify;
+    color: var(--secondary);
+    padding: 40px;
+}
+
+.BlogCard .card-section h1 { font-weight: 850; text-align: center;}
+.BlogCard .card-section h3 { font-weight: 600; padding-top: 10px;}
+.BlogCard .card-section .link .faicon {padding-left: 4px;}
+.BlogCard .card-section .link span {
+    font-weight: bold;
+    font-size: 1em;
+    color: var(--primary);
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15px;
+}
+
+.BlogCard .card-section .flap-left {
+    position: absolute;
+    content: "";
+    height: var(--height);
+    width: var(--half-wid);
+    background: var(--cover-img) var(--primary);
+    background-size: var(--width) var(--height);
+    background-position: left; 
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+
+.BlogCard .card-section .flap-right {
+    position: absolute;
+    content: "";
+    margin-left: var(--half-wid);
+    height: var(--height);
+    width: var(--half-wid);
+    background: var(--cover-img) var(--primary);
+    background-size: var(--width) var(--height);
+    background-position: right; 
+    transition: 1s;
+}
+  
+.card-section:hover .flap-right{
+    transform: translatex(var(--half-wid));
+}
+  
+.card-section:hover .flap-left{
+    transform: translatex(-300px);
+}
+
+
+
+/* BlogCover */
+.BlogCover  .text-light {   font-weight: 300;   }
+.BlogCover  .text-bold {    font-weight: bold;}
+.BlogCover {
+    font-size: 20px;
+    font-weight: 300;
+    height: 600px;
+    padding: 1em;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+  
+.BlogCover span {display: block;}
+  
+.BlogCover .title .text-bold {
+    font-family: 'Abel', sans-serif;
+}
+  
+.BlogCover .title--primary,
+.BlogCover .title--secondary { z-index: 2; };
+.BlogCover .title--secondary {text-align: right;}
+.BlogCover .title--secondary .text-bold { font-size: max(6vw, 40px); }
+.BlogCover .title--primary .text-bold {font-size: max(6vw, 40px); }
+  
+.BlogCover .title--primary {
+    margin: -500px 0px 0px 10px;
+}
+
+.BlogCover .title--secondary {
+    margin: 250px 0px 0px 10px;
+    padding-left: 600px;
+}
+
+@keyframes scribble {
+    to {
+      stroke-dashoffset: 0;
+    }
+}
+div#stripped {
+    max-width: 750px;
+    margin: 0 auto;
+    background: var(--background);
+    background-image: url(../images/DSC_7789.jpg);
+    background-size: cover;
+    font-size: 0;
+    border-radius: 20px;
+}
+div#stripped svg {
+    mix-blend-mode: darken;
+    border-radius: 20px;
+}
+
+div#stripped svg polyline {
+    fill: none;
+    stroke: var(--primary);
+    stroke-opacity: 0.5;
+    stroke-width: 200;
+    stroke-dasharray: 20000;
+    stroke-dashoffset: 20000;
+    animation: scribble 3s linear forwards;
+}
+  

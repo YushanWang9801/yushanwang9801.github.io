@@ -1,0 +1,130 @@
+/* Layout */
+.AboutPage {
+	margin: 0;
+	padding: 0 0 15px;
+}
+.AboutPage article {
+	margin: auto;
+	max-width: 1000px;
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	grid-gap: .5em;
+}
+.AboutPage h1, cite, img, aside, main {
+	grid-column: 2;
+}
+.AboutPage main {
+	max-width: 600px;
+	margin: auto;
+	text-align: justify;
+}
+.AboutPage img {
+	width: 100%;
+}
+.AboutPage p:first-child {
+	margin-top: 0;
+}.AboutPage
+.AboutPage p:last-child::after {
+	content: '  ■';
+	opacity: 0.2;
+}
+/* Title Layout */
+.AboutPage h1 span {
+	display: block;
+}
+.AboutPage .focusing {
+	margin-bottom: -10px;
+}
+.AboutPage .the {
+	transform: translateY(50%);
+	width: 50px;
+	margin: auto;
+}
+.AboutPage .heart {
+    display: block;
+    margin: 0px auto;
+	border: thin solid var(--primary);
+	border-width: thin 0;
+	padding: 10px 0px 0px -10px;
+    text-align: center;
+}
+/* Typography */
+.AboutPage h1 {
+	text-align: center;
+}
+.AboutPage .focusing {
+	font-family: 'questa-grande';
+	text-transform: uppercase;
+	font-size: 1em;
+	color: var(--secondary);
+}
+.AboutPage .the {
+	font-family: 'brandon-grotesque';
+    background: var(--background);
+	text-transform: uppercase;
+	font-size: 0.5em;
+}
+.AboutPage .heart {
+	font-family: 'ltc-bodoni-175';
+	text-transform: uppercase;
+	font-size: 2em;
+	color: var(--secondary);
+}
+.AboutPage cite {
+	font-family: 'brandon-grotesque';
+	font-style: normal;
+	text-transform: uppercase;
+	text-align: center;
+}
+.AboutPage .name {
+	font-weight: 900;
+}
+.AboutPage main {
+	font-family: 'abril-text';
+}
+.AboutPage .dropcap {
+	font-family: 'brandon-grotesque';
+	text-transform: uppercase;
+	font-size: 2em;
+	letter-spacing: 0.1em;
+	color: var(--primary);
+}
+.AboutPage aside {
+	font-family: 'brandon-grotesque';
+	font-style: italic;
+	text-align: right;
+}
+
+@media only screen and (min-width:1080px) {
+	/* Layout */
+	.AboutPage { padding:0 0; }
+	.AboutPage article {
+		grid-template-columns: 150px 700px 150px;
+		grid-gap: 1.5em;
+	}
+	.AboutPage main {
+		margin: 0;
+		letter-spacing: 0.4px;
+		line-height: 20px;
+	}
+	.AboutPage aside {
+		grid-column: 1;
+		grid-row: 3;
+		margin-top: 7em;
+		letter-spacing: 0.8px;
+	}
+	/* Title */
+	.AboutPage .focusing {
+		font-size: 2.2em;
+		margin-bottom: -15px;
+	}
+	.AboutPage .the {
+		font-size: 0.75em;
+	}
+	.AboutPage .heart {
+		font-size: 3.8em;
+	}
+	.AboutPage main h2 {
+		color: var(--primary);
+	}
+}

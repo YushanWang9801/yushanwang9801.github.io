@@ -1,0 +1,97 @@
+@import url('https://fonts.cdnfonts.com/css/911-porscha');
+
+.SingleArticle p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 3rem;
+}
+.SingleArticle  p.credits {
+  font-style: italic;
+  text-indent: 0 !important;
+  margin: 1rem 0;
+}
+.SingleArticle  p a {
+  font-weight: bolder;
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+@supports (font-variant-caps: small-caps) {
+  .multicol:first-of-type p:first-of-type {
+    font-variant-caps: small-caps;
+  }
+}
+.SingleArticle p:not(:first-of-type) {
+  text-indent: 1.4rem;
+}
+.SingleArticle .multicol {
+  column-count: 3;
+  column-gap: 2rem;
+}
+.SingleArticle  .multicol + img {
+  margin: 2rem 0;
+}
+.SingleArticle  article {
+  width: 80%;
+  margin: 0 auto 4rem;
+  padding-top: 40px;
+}
+.SingleArticle article img {
+  width: 100%;
+}
+.SingleArticle article header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid var(--secondary);
+}
+.SingleArticle article h1 {
+  margin-top: 0;
+  font-size: 2rem;
+  text-align: left;
+  font-family: "Comic Sans MS", "Comic Sans", 
+  cursive, Roboto, Helvetica, Arial, sans-serif;
+}
+.SingleArticle article h2 {
+  break-after: column;
+  font-size: 1.5rem;
+  text-align: left;
+  font-family: Optima, "Comic Sans MS", "Comic Sans", 
+  cursive, Roboto, Helvetica, Arial, sans-serif;
+}
+
+@media (max-width: 1290px) {
+  .multicol {
+    column-count: 2;
+  }
+}
+@media (max-width: 1080px) {
+  .multicol {
+    column-count: 2;
+  }
+}
+@media (max-width: 800px) {
+  article h2 {
+    break-after: avoid;
+  }
+  .multicol {
+    column-count: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  article {
+    width: 100%;
+  }
+  .multicol {
+    padding: 0 1rem;
+  }
+  article header {
+    margin-bottom: 2.5rem;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  h1 {
+    margin-bottom: 0;
+  }
+}

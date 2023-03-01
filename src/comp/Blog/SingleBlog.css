@@ -1,0 +1,143 @@
+.SingleBlog {
+    color: var(--secondary);
+}
+
+
+.SingleBlog main {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+	max-width: 1280px;
+	padding: 0 18px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content:center;	
+}
+.SingleBlog section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+	overflow: hidden;
+}
+
+.SingleBlog h1 {
+	text-align: center;
+	letter-spacing: 1.5px;
+}
+.SingleBlog .h1-divider {
+	background-color: var(--secondary);
+	margin-bottom: 37px;
+}
+.SingleBlog  article h3 {
+	font-weight: 800;
+	margin: 0;
+	line-height: 27px;
+	color:var(--primary);
+}
+.SingleBlog section p {
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+	color: var(--secondary);
+	line-height: 25px;
+	margin-bottom: 40px;
+	text-align: justify;
+}
+.SingleBlog  section .intro {
+	font-weight: 300;
+}
+.SingleBlog article p {
+	margin-top: 0;
+	margin-bottom: 30px;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+.SingleBlog article h3,
+    section p {
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+	font-size: 16px;
+}
+
+.SingleBlog img {
+    margin: 20px 0;
+    width: 100%;
+    height: 400px;
+}
+
+.article-image {
+	max-width: 100%;
+}
+.article-image img {
+	min-width: 100%;
+	position: relative;
+}
+/*
+
+@media only screen and (min-width: 320px) {
+	h1 {
+		font-size: 42px;
+		line-height: 44px;
+	}
+	.h1-divider {
+		width: 222px;
+		height: 19px;
+	}
+	.placeHolder_img {
+		height: 320px;
+		margin: 0 0 50px 0;
+	}
+
+}
+
+
+@media only screen and (min-width: 667px) {
+	article p {
+		column-count: 2;
+		column-gap: 42px;
+	}
+	
+}
+
+
+
+@media only screen and (min-width: 768px) {
+	main {
+		padding: 0 40px;
+	}
+	h1 {
+		font-size: 53.1px;
+		line-height: 0.98;
+		letter-spacing: 1.1px;
+		margin-bottom: 20px;
+	}
+	.h1-divider {
+		width: 339px;
+		height: 24px;
+		margin-bottom: 53px;
+	}
+	article p {
+		margin-bottom: 40px;
+	}
+	.placeHolder_img {
+		height: 344px;
+		margin: 0 0 40px 0;
+	}
+}
+*/
+
+@media only screen and (min-width: 1080px) {
+	.SingleBlog section {
+		width: 820px;
+	}
+	.SingleBlog h1 {
+		font-size: 50px;
+		line-height: 0.95;
+		letter-spacing: 1.4px;
+		margin-bottom: 30px;
+	}
+	.SingleBlog .h1-divider {
+		width: 486px;
+		margin-bottom: 38px;
+	}
+	.SingleBlog .placeHolder_img {
+		height: 442px;
+	}
+	
+}

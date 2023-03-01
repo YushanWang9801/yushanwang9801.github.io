@@ -1,0 +1,102 @@
+.footer {
+    max-width: 1000px;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: Optima, "Comic Sans MS", "Comic Sans", cursive, 
+    Roboto, Helvetica, Arial, sans-serif;
+}
+
+.footer .copyright {
+    color: var(--primary);
+    margin-top: 3em;
+    border-top: 1px solid var(--secondary);
+    margin-bottom: 2em;
+    font-size: 15px;
+    padding-top: 3.2em;
+}
+
+@media screen and (max-width: 768px) {
+    .footer .copyright .pull-left,
+    .footer .copyright .pull-right {
+      float: none !important;
+      text-align: center;
+      
+    }
+}
+
+.media-right, .media > .pull-right { padding-left: 10px; }
+.media-left,  .media > .pull-left { padding-right: 10px; }
+.pull-right { float: right !important; }
+.pull-left {  float: left !important;  }
+  
+.footer .copyright .block {
+    display: block;
+}
+
+.footer-icons {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-icons li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: -moz-inline-stack;
+    display: inline-block;
+    font-size: 17px;
+}
+
+.footer-icons li a {
+    color: var(--primary);
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none !important;
+}
+
+.footer-icons li:hover a{
+    color: var(--secondary);
+}
+
+.tooltip{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background: var(--secondary);
+    color: var(--background);
+    opacity: 0;
+    
+    border-radius: 10px;
+    font-size: 13.5px;
+    font-weight: bold;
+    padding: 8px 10px;
+
+    pointer-events: none;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    margin-top: -40px;
+}
+
+.github{ margin-left: -12px; }
+.linkedin { margin-left: -18px; }
+.instagram { margin-left: -22px;}
+.email { margin-left: -18px;}
+.medium { margin-left: -14px;}
+
+.footer-icons li:hover .tooltip{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.tooltip:before{
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    background: var(--secondary);
+    left: 50%;
+    bottom: -4px;
+    transform: translateX(-50%) rotate(45deg);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
