@@ -23,7 +23,7 @@ function BlogCard({blog}){
                 <div className="content">
                     <h3>{blog.short_desc}</h3>
                     <div calssName className="link">
-                            <a href={blog.url}><span className="click">
+                            <a href={`/#/blog/${blog.url}`}><span className="click">
                                 Click to Read Article 
                                 <FontAwesomeIcon className="faicon" icon={faArrowRight} />
                             </span></a>

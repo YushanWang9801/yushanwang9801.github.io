@@ -47,12 +47,12 @@ function App() {
             Object.entries(blogs).map(([path, blog]) => {
                 if(blog.type === "article"){
                   return (
-                    <Route path={`/${path}`} key={`/${path}`}
+                    <Route path={`/blog/${blog.url}`} key={`/${path}`}
                         element= {<SingleArticle blog={blog} />} />     
                   )
                 } else {
                   return (
-                    <Route path={`/${path}`} key={`/${path}`}
+                    <Route path={`/blog/${blog.url}`} key={`/${path}`}
                         element= {<SingleBlog blog={blog} />} />     
                   )
                 }
