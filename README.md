@@ -1,8 +1,18 @@
+# This is my 2023 personal Website
+
+I used react to develop the front End of this website and used firebase as the
+backend. Please see my website:
+
+https://yushan1089.github.io/
+
+Please leave any comment or questions. Thanks for checking out my website.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+
+<!-- ## Available Scripts
 
 In the project directory, you can run:
 
@@ -67,4 +77,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
