@@ -13,13 +13,13 @@ function BlogCover(){
             </div>
 
             <div class="title title--primary">
-            <span class="text-light">Yushan Wang 9801</span>
-            <span class="text-bold">POSTS</span>
+                <span class="text-light">Yushan Wang 9801</span>
+                <span class="text-bold">POSTS</span>
             </div>
 
             <div class="title title--secondary">
-            <span class="text-light">Yushan Wang 9801</span>
-            <span class="text-bold">Posts</span>
+                <span class="text-light">Yushan Wang 9801</span>
+                <span class="text-bold">Posts</span>
             </div>
     </div>
     );
