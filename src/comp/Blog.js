@@ -1,12 +1,14 @@
 import React from 'react';
-import BlogCover from './Blog/BlogCover';
-import BlogGrid from './Blog/BlogGrid';
+// import BlogCover from './Blog/BlogCover';
+// import BlogGrid from './Blog/BlogGrid';
+import BlogVScode from '../layout/BlogVScode';
 
-function Blog () {
+function Blog ({theme}) {
     return (
         <div className="Blog">
-            <BlogCover />
-            <BlogGrid />
+            {/* <BlogCover />
+            <BlogGrid /> */}
+            <BlogVScode theme={theme}/>
         </div>
     );
 }

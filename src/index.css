@@ -61,3 +61,10 @@ code {
   background: var(--merc-red);
   color: #ebeaee;
 }
+
+
+.vscode {
+  margin: 0px auto;
+  margin-top: 40px;
+  /* border: 2px solid var(--blur-background); */
+}

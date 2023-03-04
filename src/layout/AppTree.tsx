@@ -76,7 +76,7 @@ export default function AppTree({
         label="Home"
         color= "var(--background)"
         onClick={() => {
-          navigate("/");
+          navigate("/blog");
           setSelectedIndex(-1);
         }}
         sx ={{maxWidth: "220px", overflowX:"hidden"}}
@@ -99,7 +99,7 @@ export default function AppTree({
                 const newIndexs = [...visiblePageIndexs, index];
                 setVisiblePageIndexs(newIndexs);
               }
-              navigate(route);
+              navigate(`/blog${route}`);
               setSelectedIndex(index);
               setCurrentComponent("tree");
             }}

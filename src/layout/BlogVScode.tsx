@@ -1,6 +1,3 @@
-
-import * as React from "react";
-
 import {
   Container,
   Grid,
@@ -19,18 +16,17 @@ import { pages } from "../pages/pages";
 import usePageTracking from "../hooks/usePageTracking";
 import { isBrowser } from "react-device-detect";
 
-import useLocalStorage from 'use-local-storage';
-import HeaderWang from "../comp/HeaderWang";
-
+// import useLocalStorage from 'use-local-storage';
+// import HeaderWang from "../comp/HeaderWang";
 
 interface Page {
+  index: number;
   name: string;
   route: string;
-  index: number;
 }
 
 function initVisiblePageIndexs(pages: Page[]) {
-  const tabs = [];
+  const tabs : number[] = [];
   for (let i = 0; i < pages.length; i++) {
     const page = pages[i];
     tabs.push(page.index);
@@ -38,12 +34,14 @@ function initVisiblePageIndexs(pages: Page[]) {
   return tabs;
 }
 
-export default function Blog() {
+export default function BlogVScode(theme: string) {
   const navigate = useNavigate();
   const [expanded,] = useState(isBrowser);
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const [currentComponent, setCurrentComponent] = useState("");
-  const [visiblePageIndexs, setVisiblePageIndexs] = useState(initVisiblePageIndexs(pages));
+  const [visiblePageIndexs, setVisiblePageIndexs] = useState(
+    initVisiblePageIndexs(pages)
+  );
   const [visiblePages, setVisiblePages] = useState(pages);
   usePageTracking();
 
@@ -52,7 +50,7 @@ export default function Blog() {
   )?.index;
 
   useEffect(() => {
-    const newPages = [];
+    const newPages: Page[] = [];
 
     for (const index of visiblePageIndexs) {
       const page = pages.find((x) => x.index === index);
@@ -86,21 +84,7 @@ export default function Blog() {
   }, [visiblePageIndexs, navigate, deletedIndex, selectedIndex]);
 
 
-  const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
-  
-  const switchTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-  }
-
-  useEffect(() => {
-    document.documentElement.setAttribute("data-theme", theme);
-  }, [theme]);
-
   return (
-      <div className="App" >
-        <HeaderWang switchTheme={switchTheme} theme={theme} />
         <div className="vscode">
           <Container
             sx={{ m: 0, p: 0, overflowY: "hidden", height: "888px" }}
@@ -170,16 +154,16 @@ export default function Blog() {
                   >
                     <Routes>
                       <Route
-                        path="/"
+                        path="/blog"
                         element={<Home setSelectedIndex={setSelectedIndex} />}
                       />
                       {pages.map(({ index, name, route }) => (
-                        <Route
-                          key={index}
-                          path={route}
-                          element={<MDContainer path={`./pages/${name}`} />}
-                        />
-                      ))}
+                                <Route
+                                  key={index}
+                                  path={`/blog${route}`}
+                                  element={<MDContainer path={`./pages/${name}`} />}
+                                />
+                              ))}
                       <Route path="*" element={<Navigate to="/" replace />} />
                     </Routes>
                   </Grid>
@@ -188,6 +172,5 @@ export default function Blog() {
             </Grid>
           </Container>
         </div>
-    </div>
   );
 }

@@ -24,7 +24,7 @@ const NewsSection = () => {
                         <h2><strong>Latest Posts</strong></h2>
                     </div>
                     <div className = "news-right">
-                        <TestIcon text={"Discover More Blogs"} link="blog" />
+                        <TestIcon text={"Discover More Blogs"} link="/#/blog" />
                     </div>
                 </div>
 
@@ -48,7 +48,7 @@ const NewsSection = () => {
                         <h2><strong>Featured Projects<span>( 3 )</span></strong></h2>
                     </div>
                     <div className = "news-right">
-                        <TestIcon text={"My Recent Projects"} link="project" />
+                        <TestIcon text={"My Recent Projects"} link="/#/project" />
                     </div>
                 </div>
                     <div class="cards">
@@ -67,7 +67,7 @@ const NewsSection = () => {
                         <h2><strong>My Gallery</strong></h2>
                     </div>
                     <div className = "news-right">
-                        <TestIcon text={"See my latest Photos"} link="gallery" />
+                        <TestIcon text={"See my latest Photos"} link="/#/gallery" />
                     </div>
                 </div>
 
