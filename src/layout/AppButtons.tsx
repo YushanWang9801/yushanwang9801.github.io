@@ -35,10 +35,6 @@ export default function AppButtons({
       return selectedIndex === index ? "var(--background)" : "var(--accent)";
   }
 
-  function renderButtonColor(index: number) {
-      return selectedIndex === index ? "var(--secondary)" : "var(--secondary)";
-  }
-
   function renderCloseButtonBgColor(index: number) {
       return selectedIndex === index ? "var(--primary)" : "var(--secondary)";
   }
@@ -88,7 +84,7 @@ export default function AppButtons({
             px: 2,
             textTransform: "none",
             backgroundColor: renderButtonBgColor(index),
-            color: renderButtonColor(index),
+            color:"var(--secondary)",
             "&.MuiButtonBase-root:hover": {
               bgcolor: renderButtonBgColor(index),
             },

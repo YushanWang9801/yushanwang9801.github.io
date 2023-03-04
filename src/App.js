@@ -9,11 +9,12 @@ import Footer from './comp/Footer';
 
 import {Routes, Route, Navigate } from "react-router-dom";
 
-import {useEffect, useState} from "react";
+import {useEffect,} from "react";
+// import {useState} from "react";
 import useLocalStorage from 'use-local-storage';
 
 import SingleBlog from './comp/Blog/SingleBlog';
-import SingleArticle from './comp/Blog/SingleArticle';
+// import SingleArticle from './comp/Blog/SingleArticle';
 
 import blogs from "./comp/Blog/blogs-data.json";
 
@@ -41,12 +42,12 @@ function App() {
         <Routes>
           <Route key="home"     path="/" element={<Mainpage />} />
           <Route key="project"  path="/project" element={<Project />} />
-          <Route key="blog"     path="/blog" element={<Blog theme={theme} />} />
+          <Route key="blog"     path="/blog/*" element={<Blog theme={theme} />} />
           <Route key="gallery"  path="/gallery" element={<Gallery />} />
           <Route key="me"       path="/me" element={<AboutPage />} />
           <Route key="test"     path="/test" element={<SingleBlog blog={blogs["VR_system"]}/>} />
  
-          {
+          {/* {
             Object.entries(blogs).map(([path, blog]) => {
                 if(blog.type === "article"){
                   return (
@@ -60,9 +61,9 @@ function App() {
                   )
                 }
             })
-          }
-          <Route path="*" element={<Navigate to="/" replace />} />
+          } */}
 
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       <Footer />
     </div>

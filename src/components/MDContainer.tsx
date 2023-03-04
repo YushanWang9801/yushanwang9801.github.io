@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Chip,
   Container,
@@ -150,6 +149,7 @@ export default function MDContainer({ path }: Props) {
     document.title = `${process.env.REACT_APP_NAME!} | ${title}`;
   }, [pathname]);
 
+  console.log(content);
   return (
     <Container>
       <ReactMarkdown

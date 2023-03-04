@@ -9,31 +9,31 @@ import {motion} from 'framer-motion';
 
 function IconSection() {
     return (
-        <motion.div class="icons">
+        <motion.div className="icons">
         <a href="https://github.com/yushan1089"
             target="_blank" rel="noreferrer" aria-label="Find me on Github">
             <Layer icon={faGithub} />
-            <div class="text"> Github @Yushan1089</div>
+            <div className="text"> Github @Yushan1089</div>
          </a>
          <a href="https://www.linkedin.com/in/yushan1089/"
             target="_blank" rel="noreferrer" aria-label="Find me on LinkedIn">
             <Layer icon={faLinkedin} />
-            <div class="text"> LinkedIn @Yushan1089 </div>
+            <div className="text"> LinkedIn @Yushan1089 </div>
          </a>
          <a href="https://www.instagram.com/yushan9801/?hl=en"
             target="_blank" rel="noreferrer" aria-label="Find me on Instagram">
             <Layer icon={faInstagram} />
-            <div class="text"> Instagram @yushan9801 </div>
+            <div className="text"> Instagram @yushan9801 </div>
          </a>
          <a href="mailto:yushanwang0816@gmail.com"
             target="_blank" rel="noreferrer" aria-label="Contact me via Email">
             <Layer icon={faEnvelope}/>
-            <div class="text">Email: yuw688@126.com </div>
+            <div className="text">Email: yuw688@126.com </div>
          </a>
          <a href="https://medium.com/@wang33he77"
             target="_blank" rel="noreferrer" aria-label="Find me on Medium">
             <Layer icon={faMedium} />
-            <div class="text"> Medium @wang33he77 </div>
+            <div className="text"> Medium @wang33he77 </div>
          </a>
       </motion.div>
     );

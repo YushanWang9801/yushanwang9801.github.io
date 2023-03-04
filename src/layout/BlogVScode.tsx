@@ -34,7 +34,7 @@ function initVisiblePageIndexs(pages: Page[]) {
   return tabs;
 }
 
-export default function BlogVScode(theme: string) {
+export default function BlogVScode(theme: string, path: string) {
   const navigate = useNavigate();
   const [expanded,] = useState(isBrowser);
   const [selectedIndex, setSelectedIndex] = useState(-1);
@@ -87,7 +87,7 @@ export default function BlogVScode(theme: string) {
   return (
         <div className="vscode">
           <Container
-            sx={{ m: 0, p: 0, overflowY: "hidden", height: "888px" }}
+            sx={{ m: 0, p: 0, overflowY: "hidden", height: "800px" }}
             maxWidth={false}
             disableGutters
           >
@@ -148,13 +148,13 @@ export default function BlogVScode(theme: string) {
                     sx={{
                       scrollBehavior: "smooth",
                       // overflow: 'scroll',
-                      overflowY: "auto",
-                      height: `calc(100vh - 20px - 33px)`,
+                      overflowY: "hidden",
+                      height: `calc(100vh - 53px)`,
                     }}
                   >
                     <Routes>
                       <Route
-                        path="/blog"
+                        path="/"
                         element={<Home setSelectedIndex={setSelectedIndex} />}
                       />
                       {pages.map(({ index, name, route }) => (
@@ -164,7 +164,7 @@ export default function BlogVScode(theme: string) {
                                   element={<MDContainer path={`./pages/${name}`} />}
                                 />
                               ))}
-                      <Route path="*" element={<Navigate to="/" replace />} />
+                      <Route path="/blog/*" element={<Navigate to="/" replace />} />
                     </Routes>
                   </Grid>
                 </Grid>

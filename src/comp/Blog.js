@@ -3,12 +3,12 @@ import React from 'react';
 // import BlogGrid from './Blog/BlogGrid';
 import BlogVScode from '../layout/BlogVScode';
 
-function Blog ({theme}) {
+function Blog ({theme, path}) {
     return (
         <div className="Blog">
             {/* <BlogCover />
             <BlogGrid /> */}
-            <BlogVScode theme={theme}/>
+            <BlogVScode theme={theme} path={path}/>
         </div>
     );
 }

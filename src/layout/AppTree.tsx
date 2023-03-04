@@ -53,16 +53,6 @@ export default function AppTree({
     return selectedIndex === index ? "var(--background)" : "var(--accent)";
   }
 
-  function renderTreeItemColor(index: number) {
-    if (theme === 'dark') {
-      return selectedIndex === index && currentComponent === "tree"
-        ? "#f2f4f2"
-        : "var(--secondary)";
-    } else {
-      return selectedIndex === index ? "#000000" : "var(--secondary)";
-    }
-  }
-
   return (
     <TreeView
       aria-label="file system navigator"
@@ -87,7 +77,7 @@ export default function AppTree({
             nodeId={index.toString()}
             label={name}
             sx={{
-              color: renderTreeItemColor(index),
+              color: "var(--secondary)",
               backgroundColor: renderTreeItemBgColor(index),
               "&& .Mui-selected": {
                 backgroundColor: renderTreeItemBgColor(index),

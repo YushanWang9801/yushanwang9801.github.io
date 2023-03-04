@@ -11,8 +11,8 @@ function NameCard() {
                 <h1 className="logo">Yushan Wang</h1>
             </div>
             
-            <div class="back side">
-                <div class="line-numbers">
+            <div className="back side">
+                <div className="line-numbers">
                     <div>1</div>
                     <div>2</div>
                     <div>3</div>
@@ -24,20 +24,20 @@ function NameCard() {
                     <div>9</div>
                 </div>
                 <code>
-                    <span class="function">let </span><span class="variable">me</span><span class="operator">= </span><span class="operator"> &#123; </span>
-                    <div class="indent"> <span class="property">name</span><span class="operator">: </span><span class="string">'Yushan Wang'</span><span>,</span></div>
-                    <div class="indent"> <span class="property">title</span><span class="operator">: </span><span class="string">'Software Engineer'</span><span>,</span></div>
-                    <div class="indent"> <span class="property">Code</span><span class="operator">: 
-                        </span><span class="operator" >&#91;</span><span class="array"> "Python" , "JavaScript", "C++", "Matlab", "MySQL"</span><span class="operator">&#93;</span>
+                    <span className="function">let </span><span className="variable">me</span><span className="operator">= </span><span className="operator"> &#123; </span>
+                    <div className="indent"> <span className="property">name</span><span className="operator">: </span><span className="string">'Yushan Wang'</span><span>,</span></div>
+                    <div className="indent"> <span className="property">title</span><span className="operator">: </span><span className="string">'Software Engineer'</span><span>,</span></div>
+                    <div className="indent"> <span className="property">Code</span><span className="operator">: 
+                        </span><span className="operator" >&#91;</span><span className="array"> "Python" , "JavaScript", "C++", "Matlab", "MySQL"</span><span className="operator">&#93;</span>
                     </div>
-                    <div class="indent"> <span class="property">Web</span><span class="operator">: </span>
-                            <span class="operator">&#91;</span>
-                                <span class="array"> "React" , "Tailwind", "NextJS", 
-                                "HTML</span><span class="array">&#47;</span>
-                                <span class="array">css</span><span class="array">&#47;</span><span class="array">JS"</span>
-                                <span class="operator">&#93;</span>
+                    <div className="indent"> <span className="property">Web</span><span className="operator">: </span>
+                            <span className="operator">&#91;</span>
+                                <span className="array"> "React" , "Tailwind", "NextJS", 
+                                "HTML</span><span className="array">&#47;</span>
+                                <span className="array">css</span><span className="array">&#47;</span><span className="array">JS"</span>
+                                <span className="operator">&#93;</span>
                     </div>
-                    <span class="operator">&#125;</span>
+                    <span className="operator">&#125;</span>
                 </code>
             </div>
         </div>

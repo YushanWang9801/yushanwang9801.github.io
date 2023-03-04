@@ -18,7 +18,7 @@ const NewsSection = () => {
 
     return (
         <div className="newsSection">
-            <div class="wrapper">
+            <div className="wrapper">
                 <div className="news-title">
                     <div className = "news-left">
                         <h2><strong>Latest Posts</strong></h2>
@@ -28,11 +28,11 @@ const NewsSection = () => {
                     </div>
                 </div>
 
-                <div class="news">
+                <div className="news">
                     {
                         news.map(blog  => (
-                            <figure class="article">
-                                <img src={blog.coverImage} />
+                            <figure className="article">
+                                <img src={blog.coverImage} alt="blog-coverimage"/>
                                 <figcaption>
                                     <h3>{blog.name}</h3>
                                     <p>{blog.short_desc.split('.')[0]}</p>
@@ -51,11 +51,11 @@ const NewsSection = () => {
                         <TestIcon text={"My Recent Projects"} link="/#/project" />
                     </div>
                 </div>
-                    <div class="cards">
+                    <div className="cards">
                         {   
                             cards.map(card => (
-                        <figure class="card">
-                            <img src={card.coverImage} />
+                        <figure className="card">
+                            <img src={card.coverImage} alt="project-coverimage"/>
                             <figcaption>{card.name}</figcaption>
                         </figure>
                             ))
@@ -88,16 +88,16 @@ const NewsSection = () => {
 function TestIcon ({link, text}){
     return (
         <div>
-            <a class="animated-arrow" href={link} >
-                <span class="the-arrow -left">
-                <span class="shaft"></span>
+            <a className="animated-arrow" href={link} >
+                <span className="the-arrow -left">
+                <span className="shaft"></span>
                 </span>
-                <span class="main">
-                <span class="text">
+                <span className="main">
+                <span className="text">
                     {text}
                 </span>
-                <span class="the-arrow -right">
-                    <span class="shaft"></span>
+                <span className="the-arrow -right">
+                    <span className="shaft"></span>
                 </span>
                 </span>
             </a>
