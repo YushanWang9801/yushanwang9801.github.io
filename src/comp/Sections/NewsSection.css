@@ -404,3 +404,12 @@ h2 span {
 .animated-arrow > .main > .the-arrow {
   position: relative;
 }
+
+
+.link a{
+  color: var(--primary);
+}
+
+.link a:active{
+  color: var(--merc-red);
+}

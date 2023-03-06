@@ -18,9 +18,9 @@ function AboutSection(){
                 I completed my bachelor degrees at University of California, San Diego with a Double Major in Computer Engineering and Applied Mathematics. 
                 </p> 
                 <p>
-                I worked in IQIYI as a Data Analyst in 2021. 
+                I worked at IQIYI as a Data Analyst in 2021. 
                 I worked at Jiuyang Media as Software Development Engineer intern during summer 2021, 
-                and was doing research with NYU Professor Jean-Claude Franchitti. 
+                and did research with NYU Professor Jean-Claude Franchitti. 
                 </p>
             </div>
         </div>

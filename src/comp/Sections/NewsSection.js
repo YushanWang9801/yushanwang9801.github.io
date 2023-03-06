@@ -1,6 +1,11 @@
 import "./NewsSection.css";
 import useFirestore from '../../hooks/useFirestore';
 
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight }
+            from '@fortawesome/free-solid-svg-icons';
+
 // import blogs from "./../Blog/blogs-data.json";
 // import projects from "./../Projects/projects.json";
 
@@ -38,6 +43,14 @@ const NewsSection = () => {
                                 <figcaption>
                                     <h3 className="blog-title">{blog.name.substring(0, blog.name.length - 3)}</h3>
                                     <p>{blog.short_desc.split('.')[0]}</p>
+                                    <div className="link">
+                                    <a href={`/#/blog${blog.route}`}>
+                                        <span className="click">    
+                                            Click to see project 
+                                            <FontAwesomeIcon className="faicon" icon={faArrowRight} />
+                                        </span>
+                                    </a>
+                                    </div>
                                 </figcaption>
                             </figure>
                         ))

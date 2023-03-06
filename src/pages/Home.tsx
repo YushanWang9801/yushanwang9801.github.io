@@ -30,8 +30,8 @@ export default function Home({ setSelectedIndex }: Props) {
       container
       spacing={0}
       direction="column"
-      alignItems="center"
-      justifyContent="center"
+      alignItems="start"
+      justifyContent="start"
       sx={{ minHeight: `calc(100vh - 20px - 33px)` }}
     >
       <BlogCover />
