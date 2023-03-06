@@ -18,7 +18,7 @@ const Footer = () => {
                         <ul className="footer-icons">
                             <li>
                                 <div className="tooltip github"> Github </div>
-                                <a href="https://github.com/yushan1089"
+                                <a href="https://github.com/YushanWang9801"
                                 target="_blank" rel="noreferrer" aria-label="Find me on Github">
                                 <FontAwesomeIcon className="faicon" icon={faGithub} /></a>
                             </li>

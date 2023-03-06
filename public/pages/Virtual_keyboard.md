@@ -1,6 +1,6 @@
 # Create a Virtual Keyboard with Python and OpenCV
 
-![Demo recording of the Virtual Keyboard](https://firebasestorage.googleapis.com/v0/b/portfolio-d5d1f.appspot.com/o/VR-system-1.png?alt=media&token=be55b548-9103-43f4-96ec-18a7a8dda99e)
+![Demo recording of the Virtual Keyboard](https://firebasestorage.googleapis.com/v0/b/portfolio-d5d1f.appspot.com/o/Virtual_Keyboard.gif?alt=media&token=54d38462-f9a5-49fd-883e-36304f4eeeb1)
 
 This is the Github repor for the openCV Virtual Keyboard Project.
 
@@ -32,4 +32,4 @@ python ./main.py
 
 If you think this repo is helpful or interesting, please follow me on github or checkout my personal portfolio page:
 
-https://yushan1089.github.io/
+https://yushanwang9801.github.io/

@@ -1,4 +1,3 @@
-import React from 'react';
 import {useState} from 'react';
 import ProgressBar from './ProgressBar';
 import "./../../css/UploadForm.css";
@@ -8,7 +7,7 @@ const UploadFrom = () => {
     const [error, setError] = useState(null);
     //const [docs, setDocs] = useState(null);
 
-    const allowed_types = ["image/jpg", "image/png", "iamge/gif", "image/jpeg"];
+    const allowed_types = ["image/jpg", "image/png", "iamge/gif", "image/jpeg", "image/gif"];
     
     const changeHandler = (e) => {
         let selected_file = e.target.files[0];

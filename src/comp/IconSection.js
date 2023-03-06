@@ -10,10 +10,10 @@ import {motion} from 'framer-motion';
 function IconSection() {
     return (
         <motion.div className="icons">
-        <a href="https://github.com/yushan1089"
+        <a href="https://github.com/YushanWang9801"
             target="_blank" rel="noreferrer" aria-label="Find me on Github">
             <Layer icon={faGithub} />
-            <div className="text"> Github @Yushan1089</div>
+            <div className="text"> Github @YushanWang9801</div>
          </a>
          <a href="https://www.linkedin.com/in/yushan1089/"
             target="_blank" rel="noreferrer" aria-label="Find me on LinkedIn">
@@ -28,7 +28,7 @@ function IconSection() {
          <a href="mailto:yushanwang0816@gmail.com"
             target="_blank" rel="noreferrer" aria-label="Contact me via Email">
             <Layer icon={faEnvelope}/>
-            <div className="text">Email: yuw688@126.com </div>
+            <div className="text">Email: yushanwang0816@gmail.com </div>
          </a>
          <a href="https://medium.com/@wang33he77"
             target="_blank" rel="noreferrer" aria-label="Find me on Medium">
