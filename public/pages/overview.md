@@ -2,10 +2,30 @@
 
 ## Summary
 
-Senior Software Developer specializing in web application development. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including C# .NET, Python and JavaScript/TypeScript. Strong background in both accounting/auditing and software development. Mitigated the gap between end users and developers, co-designed and built scalable solutions.
+ My recent paper "Age Prediction from Retinal Fundus Images and Segmented Vessel Images using Deep Learning" is accepted for ARVO 2023.
 
+I am a graduate student in University College London, studying my graduate program in Computer Graphics, Vision and Imaging. I worked as a Research Fellow in Moorfield Eye Hospital during summer 2022. I did my thesis project with Professor Keane Pearse. Later I submit my project to ARVO. My paper is currently under review.
 
-## Experience
+I completed my bachelor degrees at University of California, San Diego with a Double Major in Computer Engineering and Applied Mathematics. I graduated in December, 2020. Then I worked in IQIYI as a Data Analyst for the first half of 2021.
+
+I worked at Jiuyang Media as Software Development Engineer intern during summer 2021, and was doing research with NYU Professor Jean-Claude Franchitti. Later I also published my first paper"Real-Time Age Estimation using Convolutional Neural Network" in later 2021.
+
+## Skills
+
+### General Tech Stacks
+- Computer Vision
+- Machine Learning
+- Web Development (Frontend & Backend)
+
+### Programming languages
+- Python
+- JavaScript/TypeScript
+- React.js
+- C++
+- Java
+- Matlab
+
+<!-- ## Experience
 
 **Software Developer** @ [Ernst & Young](https://www.ey.com/) _(Nov 2018 - Nov 2021)_
 
@@ -56,33 +76,4 @@ ming(I), Object-Oriented Programming, Probability, Digital Logic Design
 
 `2012-2016` [National Cheng Kung University](https://www.ncku.edu.tw/index.php?Lang=en)
 - **B.B.A** in Accountancy
-- GPA: 3.88/4.0
-
-## Skills
-
-### General Tech Stacks
-- Architecture Design
-- Desktop App Development
-- Web Development (Frontend & Backend)
-
-### Programming languages
-- C# .NET
-- Python
-- JavaScript/TypeScript
-  - React.js
-- T-SQL
-- Go
-- C++
-- Java
-- VB.NET/VBA
-
-## Certificates
-- Certified Public Accountant (Taiwan)
-
-## Accomplishments
-**Won First Place** @ [EY Innovation Campaign](https://www.ey.com/) _(May 2021)_
-Built Trial Balance System, a system that streamlines data transmission across users, providing consistent, reliable financial reports to them. 
-
-## Languages
-**English**: C1
-**Chinese**: Native
+- GPA: 3.88/4.0 -->

@@ -8,7 +8,7 @@ import {
 import { useEffect, useState } from "react";
 import AppTree from "./AppTree";
 
-import { Routes, Route, useNavigate, Navigate } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import AppButtons from "./AppButtons";
 import MDContainer from "../components/MDContainer";
 import Home from "../pages/Home";
@@ -87,7 +87,7 @@ export default function BlogVScode(theme: string, path: string) {
   return (
         <div className="vscode">
           <Container
-            sx={{ m: 0, p: 0, overflowY: "hidden", height: "800px" }}
+            sx={{ m: 0, p: 0, overflowY: "auto", height: "800px" }}
             maxWidth={false}
             disableGutters
           >
@@ -132,7 +132,6 @@ export default function BlogVScode(theme: string, path: string) {
                     }}
                   >
                     <AppButtons
-                      // pages={pages}
                       pages={visiblePages}
                       selectedIndex={selectedIndex}
                       setSelectedIndex={setSelectedIndex}
@@ -147,24 +146,22 @@ export default function BlogVScode(theme: string, path: string) {
                   <Grid
                     sx={{
                       scrollBehavior: "smooth",
-                      // overflow: 'scroll',
-                      overflowY: "hidden",
+                      overflowY: "auto",
                       height: `calc(100vh - 53px)`,
                     }}
                   >
                     <Routes>
                       <Route
                         path="/"
-                        element={<Home setSelectedIndex={setSelectedIndex} />}
+                        element={<Home setSelectedIndex={setSelectedIndex} />} 
                       />
                       {pages.map(({ index, name, route }) => (
                                 <Route
                                   key={index}
-                                  path={`/blog${route}`}
+                                  path={`${route}`}
                                   element={<MDContainer path={`./pages/${name}`} />}
                                 />
                               ))}
-                      <Route path="/blog/*" element={<Navigate to="/" replace />} />
                     </Routes>
                   </Grid>
                 </Grid>

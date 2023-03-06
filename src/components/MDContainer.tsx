@@ -96,6 +96,7 @@ function MarkdownH2(props: { children: ReactNode }) {
   );
 }
 
+
 // function MarkdownParagraph(props: { children: ReactNode }) {
 //   if (!props.children) return <Typography>{props.children}</Typography>;
 
@@ -137,6 +138,7 @@ function MarkdownH2(props: { children: ReactNode }) {
 export default function MDContainer({ path }: Props) {
   const [content, setContent] = useState("");
   const { pathname } = useLocation();
+
   useEffect(() => {
     fetch(path)
       .then((res) => res.text())
@@ -148,12 +150,12 @@ export default function MDContainer({ path }: Props) {
     title = title[0].toUpperCase() + title.substring(1);
     document.title = `${process.env.REACT_APP_NAME!} | ${title}`;
   }, [pathname]);
-
-  console.log(content);
+  
   return (
     <Container>
       <ReactMarkdown
         children={content}
+        className="react-markdown"
         components={{
           code: MarkdownCode,
           a: MarkdownLink,

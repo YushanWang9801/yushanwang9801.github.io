@@ -68,3 +68,22 @@ code {
   margin-top: 40px;
   /* border: 2px solid var(--blur-background); */
 }
+
+.react-markdown {
+  font-size: 16px;
+}
+
+.react-markdown img {
+  max-width: 800px;
+}
+
+.react-markdown span {
+  color: var(--primary);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.react-markdown a {
+  color: var(--primary);
+  font-size: 15px;
+}

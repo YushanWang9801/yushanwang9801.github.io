@@ -25,7 +25,7 @@ export default function ProjectCard({proj}) {
                 <div className="card--hover">
                     <h2>{proj.name}</h2>
                     <p>{proj.desc}</p>
-                    <div calssName className="link">
+                    <div className="link">
                         <span className="click">
                              Click to see project 
                             <FontAwesomeIcon className="faicon" icon={faArrowRight} />
