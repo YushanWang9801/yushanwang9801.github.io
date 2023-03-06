@@ -189,11 +189,20 @@ h2 span {
   transform: scale(1.15);
   transition: 0.2s;
 }
-.news .article figcaption h3 {
+
+.news .article figcaption h2 {
   font-size: 20px;
   margin-bottom: 0;
   font-weight: bold;
 }
+
+/* .news .article figcaption .blog-title{
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0 0;
+  padding: 20px 0px 0px 
+  color: var(--primary);
+} */
 
 .news .article figcaption p{
   color: var(--blur-secondary);

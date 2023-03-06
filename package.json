@@ -49,7 +49,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b gh-pages-march-02 -d build",
+    "deploy": "gh-pages -b gh-pages-march-06 -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

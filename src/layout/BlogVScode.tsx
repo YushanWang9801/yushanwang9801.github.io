@@ -23,6 +23,7 @@ interface Page {
   index: number;
   name: string;
   route: string;
+  // coverImage: string;
 }
 
 function initVisiblePageIndexs(pages: Page[]) {

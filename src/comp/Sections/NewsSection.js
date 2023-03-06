@@ -1,14 +1,16 @@
-import React from "react";
 import "./NewsSection.css";
-
-import blogs from "./../Blog/blogs-data.json";
-import projects from "./../Projects/projects.json";
 import useFirestore from '../../hooks/useFirestore';
 
-const getBlogs = [];
-Object.entries(blogs).map(([_, blog]) => (getBlogs.push(blog)));
-const news = getBlogs.slice(0,2);
-const cards = projects.slice(0, 3);
+// import blogs from "./../Blog/blogs-data.json";
+// import projects from "./../Projects/projects.json";
+
+// const getBlogs = [];
+// Object.entries(blogs).map(([_, blog]) => (getBlogs.push(blog)));
+// const news = getBlogs.slice(0,2);
+// const cards = projects.slice(0, 3);
+
+import { pages } from "../../pages/pagesInfo";
+const news = pages.slice(0,2);
 
 const NewsSection = () => {
 
@@ -32,9 +34,9 @@ const NewsSection = () => {
                     {
                         news.map(blog  => (
                             <figure className="article">
-                                <img src={blog.coverImage} alt="blog-coverimage"/>
+                                <img src={blog.cover} alt="blog-coverimage"/>
                                 <figcaption>
-                                    <h3>{blog.name}</h3>
+                                    <h3 className="blog-title">{blog.name.substring(0, blog.name.length - 3)}</h3>
                                     <p>{blog.short_desc.split('.')[0]}</p>
                                 </figcaption>
                             </figure>
@@ -43,7 +45,7 @@ const NewsSection = () => {
                 </div>
 
 
-                <div className="news-title">
+                {/* <div className="news-title">
                     <div className = "news-left">
                         <h2><strong>Featured Projects<span>( 3 )</span></strong></h2>
                     </div>
@@ -60,7 +62,7 @@ const NewsSection = () => {
                         </figure>
                             ))
                         }
-                    </div>
+                    </div> */}
 
                     <div className="news-title">
                     <div className = "news-left">

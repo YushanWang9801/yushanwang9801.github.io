@@ -9,6 +9,7 @@ interface Props {
     index: number;
     name: string;
     route: string;
+    // coverImage: string;
   }[];
   selectedIndex: number;
   setSelectedIndex: React.Dispatch<React.SetStateAction<number>>;
