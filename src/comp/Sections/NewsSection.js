@@ -41,7 +41,7 @@ const NewsSection = () => {
                             <figure className="article">
                                 <img src={blog.cover} alt="blog-coverimage"/>
                                 <figcaption>
-                                    <h3 className="blog-title">{blog.name.substring(0, blog.name.length - 3)}</h3>
+                                    <h3 className="blog-title">{blog.title}</h3>
                                     <p>{blog.short_desc.split('.')[0]}</p>
                                     <div className="link">
                                     <a href={`/#/blog${blog.route}`}>

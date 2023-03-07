@@ -26,7 +26,7 @@ pip install cvzone
 Once you have downloaded the project and installed the required packages, you
 can run the program with the following command:
 
-```{python}
+```
 python ./main.py
 ```
 
