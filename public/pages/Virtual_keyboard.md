@@ -2,7 +2,8 @@
 
 ![Demo recording of the Virtual Keyboard](https://firebasestorage.googleapis.com/v0/b/portfolio-d5d1f.appspot.com/o/Virtual_Keyboard.gif?alt=media&token=54d38462-f9a5-49fd-883e-36304f4eeeb1)
 
-This is the Github repor for the openCV Virtual Keyboard Project.
+The Github repor for the openCV Virtual Keyboard Project could be found:
+https://github.com/YushanWang9801/opencv-virtual-keyboard
 
 The tutorial of this project can be found on Medium or access with the following link:
 

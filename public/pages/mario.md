@@ -3,7 +3,10 @@
 ![Demo recording of the Mario Runner](./images/mario.gif)
 
 
-This is the repo of a simple Mario run game built with Pygame and Python.
+this project creates a simple Mario run game built with Pygame and Python.
+
+The github repo of this project could be found at:
+https://github.com/YushanWang9801/pygame_mario
 
 After cloning the repository to your local directory, make sure you have pygame installed.
 
