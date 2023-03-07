@@ -28,4 +28,4 @@ Mario Run with Pygame (Part III) : https://medium.com/@wang33he77/mario-run-wit
 
 If you think this repo is helpful or interesting, please follow me on github or checkout my personal portfolio page:
 
-https://yushan1089.github.io/
+https://yushanwang9801.github.io/
