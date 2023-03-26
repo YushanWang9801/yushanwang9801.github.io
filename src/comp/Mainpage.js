@@ -1,4 +1,4 @@
-import React from 'react';
+import {useRef} from 'react';
 import "./../css/Mainpage.css";
 import "./../css/style.css";
 import AboutSection from './Sections/AboutSection';

@@ -1,10 +1,11 @@
-import React from "react";
 import "../../css/CoverSection.css";
+import {Link} from 'react-scroll';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 function CoverSection() {
+
     return (
         <div className="coversection">
             <div className="leftpage">
@@ -27,7 +28,11 @@ function CoverSection() {
             <div className="rightpage">
                 <div className="circle"></div>
                 <div className="sendMessage">
-                    <span>Send Message</span>       
+                    <span>
+                        <Link  to="contact" spy={true} smooth={true}>
+                            Send Message
+                        </Link>
+                    </span>       
                 </div>
             </div>
         </div>

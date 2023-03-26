@@ -1,4 +1,3 @@
-import React from 'react';
 import {motion} from 'framer-motion';
 
 import "./../css/Contact.css";
@@ -10,7 +9,7 @@ import { projectFirestore, timestamp } from '../firebase/config';
 
 function Contact(){
     return (
-      <div className='Contact'>
+      <div className='Contact' id="contact">
         <IconSection />
         <InfoSection />
       </div>
