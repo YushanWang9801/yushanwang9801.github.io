@@ -12,13 +12,16 @@ import {Routes, Route, Navigate } from "react-router-dom";
 import {useEffect,} from "react";
 import useLocalStorage from 'use-local-storage';
 
-import SingleBlog from './comp/Blog/SingleBlog';
+// import SingleBlog from './comp/Blog/SingleBlog';
 // import SingleArticle from './comp/Blog/SingleArticle';
 
-import blogs from "./comp/Blog/blogs-data.json";
+// import blogs from "./comp/Blog/blogs-data.json";
 
 // import { pages } from "./pages/pages";
 // import MDContainer from "./components/MDContainer";
+
+import CoverSection from './comp/Sections/CoverSection';
+
 
 function App() {
   const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -44,7 +47,7 @@ function App() {
           <Route key="blog"     path="/blog/*" element={<Blog theme={theme} />} />
           <Route key="gallery"  path="/gallery" element={<Gallery />} />
           <Route key="me"       path="/me" element={<AboutPage />} />
-          <Route key="test"     path="/test" element={<></>} />
+          <Route key="test"     path="/test" element={<Test />} />
 
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
@@ -53,5 +56,12 @@ function App() {
   );
 }
 
+function Test() {
+  return (
+      <div className="Mainpage">
+          <CoverSection />
+      </div>
+  );
+}
 
 export default App;
