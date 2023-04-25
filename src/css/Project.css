@@ -1,11 +1,11 @@
 /* ProjectTitle */
 .ProjectTitle {
-    font-family: Optima, "Comic Sans MS", "Comic Sans", cursive, 
-                    Roboto, Helvetica, Arial, sans-serif;
+    font-family: Optima, "Comic Sans MS", "Comic Sans", cursive,
+        Roboto, Helvetica, Arial, sans-serif;
     margin-left: 30px;
 }
 
-.ProjectTitle h2{
+.ProjectTitle h2 {
     margin-left: 30px;
     margin-top: 60px;
     font-size: 2.6rem;
@@ -16,11 +16,11 @@
     letter-spacing: normal;
 }
 
-.ProjectTitle h2:hover{
+.ProjectTitle h2:hover {
     color: var(--secondary);
 }
 
-.ProjectTitle span{
+.ProjectTitle span {
     margin-left: 30px;
     color: var(--secondary);
     font-size: 1.6rem;
@@ -28,65 +28,87 @@
     display: flex;
 }
 
-.project-grid{  
-    margin: 50px 0px 50px -60px;
-    display: grid;
+.project-grid {
     justify-content: space-evenly;
-    gap: 50px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-width: 49%;
+    -moz-column-width: 49%;
+    column-width: 49%;
+
+    grid-gap: 50px;
     grid-template-columns: 440px 440px;
 }
 
 /* ProjectCard */
 .project-grid .ProjectCard .card {
-  display: inline-block;
-  font-weight: bold;
-  position: relative;
-  width: 440px;
-  height: 220px;
+    display: inline-block;
+    font-weight: bold;
+    position: relative;
+    width: 90%;
+    height: 220px;
+    margin-top: 50px;
 }
 
 .project-grid .ProjectCard .card {
-  padding: 30px;
-  border: 2px solid linear-gradient(var(--accent), var(--background));;
-  border-radius: 10px;
-  background: linear-gradient(var(--accent), var(--background), var(--accent));
-  text-decoration: none;
-  color: var(--secondary);
-  display: inline-block;
-  transition: 0.25s ease;
+    padding: 30px;
+    border: 2px solid linear-gradient(var(--accent), var(--background));
+    border-radius: 10px;
+    background: linear-gradient(var(--accent), var(--background), var(--accent));
+    text-decoration: none;
+    color: var(--secondary);
+    display: inline-block;
+    transition: 0.25s ease;
 }
 
 .project-grid .ProjectCard .card:hover {
-  transform: translate(-30px, -30px);
-  border-color: var(--primary);
+    transform: translate(-30px, -30px);
+    border-color: var(--primary);
 }
 
-.project-grid .ProjectCard .card:hover .card--display { display: none; }
-.project-grid .ProjectCard .card .card--display h2 {  margin-top: 60px; }
-.project-grid .ProjectCard .card .card--display h3 { 
+.project-grid .ProjectCard .card:hover .card--display {
+    display: none;
+}
+
+.project-grid .ProjectCard .card .card--display h2 {
+    margin-top: 30px;
+    font-size: 1.8em;
+}
+
+.project-grid .ProjectCard .card .card--display h3 {
     margin-top: 10px;
-    font-size: 17px;
+    font-size: 1.0em;
     line-height: 1.5;
     letter-spacing: 1px;
-    color:var(--primary); 
+    color: var(--primary);
 }
 
-.project-grid .ProjectCard .card .card--display .hashtag {margin-top: 30px;}
+.project-grid .ProjectCard .card .card--display .hashtag {
+    margin-top: 30px;
+}
 
-.project-grid .ProjectCard .card .card--display span { 
+.project-grid .ProjectCard .card .card--display span {
     margin-right: 20px;
-    color: var(--secondary); 
+    color: var(--secondary);
     padding: 5px 10px;
+
     border: 2px solid var(--primary);
     background-color: var(--accent);
+
     border-radius: 20px;
     font-size: 13px;
     letter-spacing: 1px;
 }
 
 
-.project-grid .ProjectCard .card:hover .card--hover { display: block; }
-.project-grid .ProjectCard .card .card--hover { display: none;}
+.project-grid .ProjectCard .card:hover .card--hover {
+    display: block;
+}
+
+.project-grid .ProjectCard .card .card--hover {
+    display: none;
+}
 
 .project-grid .ProjectCard .card .card--hover h2 {
     margin-top: 30px;
@@ -94,8 +116,8 @@
 }
 
 .project-grid .ProjectCard .card .card--hover p {
-  font-weight: normal;
-  line-height: 1.5;
+    font-weight: normal;
+    line-height: 1.5;
 }
 
 .project-grid .ProjectCard .card .card--hover .link {
@@ -105,11 +127,48 @@
 
     display: flex;
     justify-content: space-between;
-    margin: 0px 50px 10px 0px; 
+    margin: 0px 50px 10px 0px;
 }
 
-.project-grid .ProjectCard .card  .card--hover .faicon {
+.project-grid .ProjectCard .card .card--hover .faicon {
     font-weight: normal;
     padding-left: 3px;
     padding-top: 1px;
+}
+
+@media (max-width: 600px) {
+    .project-grid {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 80%;
+        -moz-column-width: 80%;
+        column-width: 80%;
+    }
+
+    .project-grid .ProjectCard .card {
+        margin-left: 10%;
+        padding: 0px 10px;
+        height: 300px;
+        width: 80%;
+        border: 30px solid linear-gradient(var(--accent), var(--background));
+    }
+
+    .project-grid .ProjectCard .card .card--display h2 {
+        margin-top: 30px;
+        font-size: 1.2em;
+    }
+
+    .project-grid .ProjectCard .card .card--display h3 {
+        font-size: 0.8em;
+    }
+
+    .project-grid .ProjectCard .card .card--display .hashtag {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-grid .ProjectCard .card .card--display span {
+        margin-top: 10px;
+    }
 }

@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 
-a { text-decoration: none; }
+a { text-decoration: none; z-index: 2;}
 h1 {
     color: var(--primary);
     font-size: 1.6rem;
@@ -37,6 +37,8 @@ h1:hover {
     display: flex;
     justify-content: center;
     gap:  1vw;
+
+    z-index: 2;
 }
 
 .navbar a{
@@ -76,6 +78,7 @@ h1:hover {
     width:  min(16vw, 100px);
     height: min(9vw, 45px);
 
+    z-index: 2;
     position: relative;
     left: 550%;
 
@@ -280,10 +283,9 @@ h1:hover {
 	.navbar {
 		position: fixed;
 		left: 50%;
-        top: -50%;
-        z-index: 2;
+        top: -60%;
 
-		height: 85%;
+		height: 75%;
 		width: 90%;
 		
         display: flex;
@@ -297,7 +299,7 @@ h1:hover {
 	}
 
 	.responsive_nav {
-		top: 50%;
+		top: 45%;
 	}
 
 	.navbar a {

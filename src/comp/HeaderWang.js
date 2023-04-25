@@ -11,18 +11,17 @@ const HeaderWang = ({switchTheme, theme}) => {
 		navRef.current.classList.toggle(
 			"responsive_nav"
 		);
-        setIsOpen(!isOpen);
-	};
+    };
 
     return (
         <div className="HeaderWang">
             <a href="/"><h1>YushanWang9801</h1> </a>   
             <nav className="navbar" ref={navRef}>
-                <a href="/#/project" onClick={showNavbar}>Projects</a>
-                <a href="/#/blog"    onClick={showNavbar}>Blogs</a>
-                <a href="/#/gallery" onClick={showNavbar}>Gallery</a>
+                <a href="/#/project" onClick={() => {showNavbar(); setIsOpen(false)}}>Projects</a>
+                <a href="/#/blog"    onClick={() => {showNavbar(); setIsOpen(false)}}>Blogs</a>
+                <a href="/#/gallery" onClick={() => {showNavbar(); setIsOpen(false)}}>Gallery</a>
                 <a href="/#/me" id="Me"
-                                     onClick={showNavbar}>Me</a>
+                                     onClick={() => {showNavbar(); setIsOpen(false)}}>Me</a>
             </nav>
             <div className='dark_mode'>
                 <input
@@ -35,7 +34,7 @@ const HeaderWang = ({switchTheme, theme}) => {
             </div>
             <button
 				className="nav-btn"
-				onClick={showNavbar}>
+				onClick={() => {showNavbar(); setIsOpen(!isOpen)}}>
 				{isOpen ? <FaTimes /> : <FaBars />}
 			</button>
         </div>

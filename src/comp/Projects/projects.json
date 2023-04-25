@@ -38,7 +38,7 @@
         "name": "Empirical Comparison on ML Algorithms", 
         "short_desc": "Based on previous ML study, I developed an empirical study on supervised learning algorithms",
         "tags": ["#Machine Learning", "#Python"],
-        "desc": "It presents a ranking of four supervised learning methods: SVMs, Logistic Regression, Decision Tree, KNN, Gaussian Naive Bayes, bagging classifier. The experiment uses four data sets with different magnitudes as a variety of performance criteria to evaluate the six learning methods",
+        "desc": "It presents a ranking of supervised learning methods. The experiment uses four data sets with different magnitudes as a variety of performance criteria to evaluate the six learning methods",
         "source_code_url" : "#",
         "coverImage" : "/project_images/Age_Estimation.png"
     }                  
