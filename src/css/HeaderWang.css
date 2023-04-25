@@ -282,11 +282,11 @@ h1:hover {
 
 	.navbar {
 		position: fixed;
-		left: 50%;
-        top: -60%;
+		left: 50vw;
+        top: -90vh;
 
-		height: 75%;
-		width: 90%;
+		height: 60vh;
+		width: 85vw;
 		
         display: flex;
 		flex-direction: column;
@@ -299,7 +299,7 @@ h1:hover {
 	}
 
 	.responsive_nav {
-		top: 45%;
+		top: 40vh;
 	}
 
 	.navbar a {
@@ -324,7 +324,7 @@ h1:hover {
     .switch {
         width: 100px;
         height: 45px;
-        left: 400%;
+        left: 410%;
     }
 
 }

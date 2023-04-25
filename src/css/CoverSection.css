@@ -8,6 +8,7 @@
     background: var(--accent);
     border-radius: 20px;
     display: flex;
+    margin-top: 2vh;
 }
 
 .leftpage {
@@ -149,6 +150,7 @@
         height: 40vh;
         display: block;
         margin: auto;
+        margin-top: 2vh;
     }
 
     .leftpage {
@@ -158,6 +160,7 @@
     }
 
     .first-row {
+        margin-left: 5%;
         margin-bottom: 0;
     }
 
@@ -167,15 +170,15 @@
     }
 
     .second-row .title {
-        width: 80%;
-        font-size: 3vw;
-        padding: 5px 15px;
+        width: 100%;
+        font-size: 2.3vw;
+        padding: 5px;
         line-height: 1.5;
         margin-top: 0;
     }
 
     .second-row .faicon {
-        margin-left: 40%;
+        margin-left: 10%;
     }
 
     .second-row .institution {
@@ -204,4 +207,29 @@
     .rightpage .sendMessage {
         margin-top: 10px;
     }
+}
+
+@media screen and (min-width: 761px) and (max-width: 1079px) {
+    .first-row span {
+        padding-top: 0;
+        font-size: 4vw;
+    }
+
+    .first-row {
+        margin-left: 5%;
+        margin-bottom: 2vh;
+    }
+
+    .second-row .title {
+        width: 85%;
+        font-size: 2.5vw;
+        line-height: 1.5;
+        padding-left: 20px;
+        text-align: justified;
+    }
+
+    .second-row .faicon {
+        margin-left: 10%;
+    }
+
 }
