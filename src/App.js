@@ -10,7 +10,6 @@ import Footer from './comp/Footer';
 import {Routes, Route, Navigate } from "react-router-dom";
 
 import {useEffect,} from "react";
-// import {useState} from "react";
 import useLocalStorage from 'use-local-storage';
 
 import SingleBlog from './comp/Blog/SingleBlog';
@@ -45,23 +44,7 @@ function App() {
           <Route key="blog"     path="/blog/*" element={<Blog theme={theme} />} />
           <Route key="gallery"  path="/gallery" element={<Gallery />} />
           <Route key="me"       path="/me" element={<AboutPage />} />
-          <Route key="test"     path="/test" element={<SingleBlog blog={blogs["VR_system"]}/>} />
- 
-          {/* {
-            Object.entries(blogs).map(([path, blog]) => {
-                if(blog.type === "article"){
-                  return (
-                    <Route path={`/blog/${blog.url}`} key={`/${path}`}
-                        element= {<SingleArticle blog={blog} />} />     
-                  )
-                } else {
-                  return (
-                    <Route path={`/blog/${blog.url}`} key={`/${path}`}
-                        element= {<SingleBlog blog={blog} />} />     
-                  )
-                }
-            })
-          } */}
+          <Route key="test"     path="/test" element={<></>} />
 
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

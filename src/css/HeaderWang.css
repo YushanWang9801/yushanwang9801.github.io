@@ -1,20 +1,21 @@
 .HeaderWang {
     font-family: Optima, "Comic Sans MS", "Comic Sans", cursive, 
                     Roboto, Helvetica, Arial, sans-serif;
-    padding-top: 40px;
-    padding-left: 30px;
+    max-width: 1080px !important;         
+    padding-top: 4vh;
+
     display: flex;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-a { text-decoration: none;}
+a { text-decoration: none; }
 h1 {
     color: var(--primary);
     font-size: 1.6rem;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: normal;
-    margin-left: 40px;
+    padding-left: 3vw;
 }
 
 h1:hover {
@@ -23,17 +24,19 @@ h1:hover {
 
 .navbar{
     position: absolute;
-    margin-top: 25px;
+    margin-top: max(25px, 2.5vh);
+
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     
     border: 3px solid var(--secondary);
-    border-radius: 30px;
+    border-radius: max(30px, min(1.5vw, 3vh));
 
-    padding: 10px 0px 10px 25px;
+    padding: 1vh 0px 1vh 1.2vw;
     display: flex;
-    gap:  20px;
+    justify-content: center;
+    gap:  1vw;
 }
 
 .navbar a{
@@ -44,7 +47,7 @@ h1:hover {
     font-weight: bold;
     text-align: center;
     
-    width: 70px;
+    width: min(70px, 10vw);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
@@ -58,20 +61,22 @@ h1:hover {
 }
 
 .switch{
+    width:  min(16vw, 100px);
+    height: min(9vw, 45px);
+
     position: relative;
-    width: 100px;
-    height: 45px;
-    margin: 0px;
-    margin-top: 5px;
-    margin-left: 600px;
+    left: 550%;
+
     appearance: none;
     -webkit-appearance: none;
     background-size: cover;
     background-repeat: no-repeat;
+
     border: 3px solid var(--secondary);
     border-radius: 25px;
     box-shadow: inset 0px 0px 2px rgba(255,255,255,.7);
     transition: background-image .7s ease-in-out;
+
     outline: none;
     cursor: pointer;
     overflow: hidden;
@@ -83,12 +88,12 @@ h1:hover {
     transition: background-image 1s ease-in-out;
     background-image: url("../images/bg2.jpg");
 }
-    
-    
+
 .switch:after{
     content: '';
-    width: 46px;
-    height:46px;
+    width: min(9vw, 45px);
+    height:min(5.5vh, 45px);
+
     border-radius: 50%;
     /* background: linear-gradient(#7bf2da 20%, #0ABAB5 50%, var(--primary) 100%, #09604f 100%); */
     position: absolute;
@@ -101,41 +106,38 @@ h1:hover {
     
 @keyframes off{
     0%{
-        transform: translateX(80px);
-        width: 46px;
+        transform: translateX(min(16vw, 80px));
+        width: min(9vw, 45px);
     }
     50%{
-        width: 75px;  
-        border-radius: 25px;   
+        width: min(12vw, 75px);  
+        border-radius: min(4vw, 75px);   
     }
     100%{
         transform: translateX(0px); 
-        width: 46px;
+        width: min(9vw, 45px);
     }
 }
-    
-    
     
 .switch:checked:after{
     animation: on .7s forwards cubic-bezier(.8, .5, .2, 1.4);
     box-shadow: inset -5px -5px 4px rgba(53, 53, 53, 0.3);
-    }
-    
-    @keyframes on{
+}
+
+@keyframes on{
     0%{
         transform: translateX(0px);
-        width: 46px;
+        width: min(9vw, 45px);
     }
     50%{
-        width: 75px;  
+        width: min(12vw, 75px);
         border-radius: 25px;   
     }
     100%{
-        transform: translateX(80px); 
-        width: 46px;
+        transform: translateX(min(16vw, 80px)); 
+        width: min(9vw, 45px);
     }
 }
-    
     
 .switch:checked:before{
     content: '';
@@ -176,14 +178,12 @@ h1:hover {
         transform: rotate(0deg);
         background-color: #f5daaa;
         box-shadow: 0px 0px 10px #f5deb4,
-        0px 0px 20px #f5deb4,
-        0px 0px 30px #f5deb4,
-         inset 0px 0px 2px #efd3a3;
-         filter: blur(1px);
+                    0px 0px 20px #f5deb4,
+                    0px 0px 30px #f5deb4,
+                    inset 0px 0px 2px #efd3a3;
+        filter: blur(1px);
     }
 }
-    
-    
     
 .switch:before{
     content: '';
@@ -191,7 +191,7 @@ h1:hover {
     height: 15px;
     border-radius: 50%;
     position: absolute;
-    left: 15px;
+    left: 20px;
     top: 5px;
     filter: blur(1px);
     background-color: #f5daaa;
@@ -223,4 +223,62 @@ h1:hover {
         box-shadow: 5px -1px 0px #fff;
         filter: blur(0px);
     }
+}
+
+
+@media screen and (max-width: 760px) {
+    .HeaderWang {
+        margin-left: 5%;
+        padding-top: 2vh;
+        align-items: center;
+    }
+
+    .HeaderWang h1 {
+        font-size: 1.2rem;
+        letter-spacing: 0;
+    }
+
+    .navbar{
+        display: none;
+    }
+    
+    .switch {
+        left: 30%;
+        width:  min(16vw, 100px);
+        height: min(9vw, 45px);
+    }
+
+    .switch:checked:before{
+        left: 5px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .switch:before{
+        left: -10px;
+        top: -2px;
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media screen and (min-width: 761px) and (max-width: 1079px) {
+    .HeaderWang {
+        width: 80vw;
+        margin-left: 5%;
+        padding-top: 2vh;
+        align-items: center;
+    }
+
+    .HeaderWang h1 {
+        font-size: 1.2rem;
+        letter-spacing: 0;
+    }
+
+    .switch {
+        width: 100px;
+        height: 45px;
+        left: 400%;
+    }
+
 }

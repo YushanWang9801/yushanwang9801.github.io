@@ -1,6 +1,5 @@
 import React from 'react';
 import "./../css/HeaderWang.css";
-// import { useState, useEffect } from 'react';
 
 const HeaderWang = ({switchTheme, theme}) => {
     return (
@@ -15,7 +14,7 @@ const HeaderWang = ({switchTheme, theme}) => {
             <div className='dark_mode'>
                 <input
                     className='switch'
-                    checked = {theme ==="light"}
+                    checked = {theme === "light"}
                     type='checkbox'
                     id='darkmode-toggle'
                     onChange={switchTheme}
