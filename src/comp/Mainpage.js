@@ -1,5 +1,5 @@
 import {useRef} from 'react';
-import "./../css/Mainpage.css";
+import "./../css/AboutSection.css";
 import "./../css/style.css";
 import AboutSection from './Sections/AboutSection';
 import CoverSection from './Sections/CoverSection';

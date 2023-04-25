@@ -20,8 +20,7 @@ import useLocalStorage from 'use-local-storage';
 // import { pages } from "./pages/pages";
 // import MDContainer from "./components/MDContainer";
 
-import CoverSection from './comp/Sections/CoverSection';
-
+import Contact from './comp/Contact';
 
 function App() {
   const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -59,7 +58,7 @@ function App() {
 function Test() {
   return (
       <div className="Mainpage">
-          <CoverSection />
+        <Contact />
       </div>
   );
 }

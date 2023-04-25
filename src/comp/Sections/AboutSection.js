@@ -1,6 +1,6 @@
 import React from "react";
 import NameCard from "./NameCard";
-import "./../../css/Mainpage.css";
+import "./../../css/AboutSection.css";
  
 function AboutSection(){
     return (
@@ -17,7 +17,7 @@ function AboutSection(){
                 <p>
                 I completed my bachelor degrees at University of California, San Diego with a Double Major in Computer Engineering and Applied Mathematics. 
                 </p> 
-                <p>
+                <p id="optional_paragraph">
                 I worked at IQIYI as a Data Analyst in 2021. 
                 I worked at Jiuyang Media as Software Development Engineer intern during summer 2021, 
                 and did research with NYU Professor Jean-Claude Franchitti. 

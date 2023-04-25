@@ -75,6 +75,10 @@
     width: 220px;
 }
 
+.second-row .faicon {
+    margin-left: 10%;
+}
+
 
 /** circle **/
 .circle {
@@ -180,7 +184,7 @@
     .second-row .faicon {
         margin-left: 10%;
     }
-
+    
     .second-row .institution {
         display: none;
     }

@@ -248,6 +248,7 @@ h2 span {
 .gallerySection:hover img {
   opacity:0.3;
 }
+
 .gallerySection img:hover {
   transform: perspective(800px)       rotateY(0deg);
   opacity:1;
@@ -412,4 +413,46 @@ h2 span {
 
 .link a:active{
   color: var(--merc-red);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1079px) {
+  .news .article {
+    width: 40vw;
+    height: 22.5vw;
+  }
+
+  .news .article figcaption {
+    padding: 0;
+    padding-left: 15px;
+  }
+
+  .link a{
+    color: #fff;
+  }
+
+  .gallerySection {
+    width: 95vw;
+  }
+
+  .gallerySection img:nth-child(5){
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gallerySection {
+    width: 90vw;
+  }
+
+  .gallerySection img:nth-child(3){
+    display: none;
+  }
+
+  .gallerySection img:nth-child(4){
+    display: none;
+  }
+
+  .gallerySection img:nth-child(5){
+    display: none;
+  }
 }

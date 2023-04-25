@@ -112,3 +112,69 @@
     background-color: var(--primary);
     color: var(--accent);
 }
+
+
+@media screen and (max-width: 767px) {
+    .form {
+        width: 90vw;
+        margin-left: 30px;
+        padding-left: 0;
+    }
+
+    .form .form-first-row{
+        flex-direction: column;
+    }
+
+    .form .form-first-row .form-email{
+        margin-left: 0;
+    }
+
+    #name {
+        width: 80vw;
+    }
+    #email {
+        width: 80vw;
+    }
+    #subject{
+        width: 80vw;
+    }
+    #message {
+        width: 82vw;
+        padding: 0px 0px;
+    }
+
+    .info-image {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1079px) {
+    .form {
+        width: 50vw;
+        margin-left: 30px;
+        padding-left: 0;
+    }
+    .form .form-first-row .form-email{
+        margin-left: 5vw;
+    }
+
+    #name {
+        width: 20vw;
+    }
+    #email {
+        width: 20vw;
+    }
+    #subject{
+        width: 46vw;
+    }
+    #message {
+        width: 48vw;
+        padding: 0px 0px;
+    }
+
+    .info-image {
+        width: 45vw;
+        height: max(65vw, 45vh);
+        margin-left: 5vw;
+    }
+}

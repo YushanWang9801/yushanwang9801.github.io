@@ -123,3 +123,34 @@
     bottom: -50px;
     opacity: 1;
 }
+
+@media screen and (max-width: 767px) {
+    .icons{
+        width: 90vw;
+
+        padding: 0 0;
+        margin-left: 5vw;
+        margin-top: 2vh;
+        margin-bottom: 4vh;
+
+        gap: 0;
+
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .icons a .layer{
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .icons a .layer span.fab{
+        font-size: 5vw;
+        line-height: 10vw;
+        text-align: center;
+    }
+
+    .icons a .text{
+        display: none;
+    }
+}
