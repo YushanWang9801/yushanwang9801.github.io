@@ -60,6 +60,18 @@ h1:hover {
     text-decoration: dashed;
 }
 
+.nav-btn{
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--textColor);
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.0rem;
+}
+
+
 .switch{
     width:  min(16vw, 100px);
     height: min(9vw, 45px);
@@ -237,10 +249,6 @@ h1:hover {
         font-size: 1.2rem;
         letter-spacing: 0;
     }
-
-    .navbar{
-        display: none;
-    }
     
     .switch {
         left: 30%;
@@ -260,6 +268,42 @@ h1:hover {
         width: 10px;
         height: 10px;
     }
+
+    .nav-btn {
+		visibility: visible;
+		opacity: 1;
+        position: absolute;
+        right: 5%;
+        font-size: 1.5rem;
+	}
+
+	.navbar {
+		position: fixed;
+		left: 50%;
+        top: -50%;
+        z-index: 2;
+
+		height: 85%;
+		width: 90%;
+		
+        display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		
+        gap: 1.5rem;
+		background-color: var(--background);
+		transition: 1s;
+	}
+
+	.responsive_nav {
+		top: 50%;
+	}
+
+	.navbar a {
+		font-size: 1.5rem;
+        padding-right: 15%;
+	}
 }
 
 @media screen and (min-width: 761px) and (max-width: 1079px) {
