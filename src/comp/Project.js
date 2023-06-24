@@ -12,10 +12,15 @@ function Project () {
     return (
         <div className="project">
             <ProjectTitle />
-            <div className='project-grid'>
-                {projects.map(project => (
+            {/* <div className='project-grid'>
+                {news.map(project => (
                     <ProjectCard proj={project}/>
                 ))}
+            </div> */}
+            <div className='project-grid'>
+                    {projects.map(project => (
+                        <ProjectCard proj={project}/>
+                    ))}
             </div>
         </div>
     );

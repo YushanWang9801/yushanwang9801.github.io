@@ -13,28 +13,48 @@ export default function ProjectCard({proj}) {
     }
     
     return (
-    <div className="ProjectCard">
-        <div className="card">
-                <div className="card--display">
-                    <h2>{proj.name}</h2>
-                    <h3>{proj.short_desc}</h3>
-                    <div className="hashtag">
-                        {proj.tags.map(tag => (<span>{tag}</span>))}
-                    </div>
+    // <div className="ProjectCard">
+    //     <div className="card">
+    //             <div className="card--display">
+    //                 <h2>{proj.name}</h2>
+    //                 <h3>{proj.short_desc}</h3>
+    //                 <div className="hashtag">
+    //                     {proj.tags.map(tag => (<span>{tag}</span>))}
+    //                 </div>
+    //             </div>
+    //             <div className="card--hover">
+    //                 <h2>{proj.name}</h2>
+    //                 <p>{proj.desc}</p>
+    //                 <div className="link">
+    //                     <span className="click">
+    //                          Click to see project 
+    //                         <FontAwesomeIcon className="faicon" icon={faArrowRight} />
+    //                     </span>
+    //                     {source_code}
+    //                 </div>
+    //             </div>
+    //         <div className="card--border"></div>
+    //     </div>
+    // </div>
+        <div className="ProjectCard">
+            <div className="project-image">
+                <img src={proj.coverImage} alt={proj.name} />
+            </div>
+            <div className="project-details">
+                <h3>{proj.name}</h3>
+                <h5>{proj.short_desc}</h5>
+                <p>{proj.desc}</p>
+                <div className="hashtag">
+                    {proj.tags.map(tag => (<span>{tag}</span>))}
                 </div>
-                <div className="card--hover">
-                    <h2>{proj.name}</h2>
-                    <p>{proj.desc}</p>
-                    <div className="link">
-                        <span className="click">
-                             Click to see project 
+                <div className="link">
+                         <span className="click">
+                            Click to see project 
                             <FontAwesomeIcon className="faicon" icon={faArrowRight} />
-                        </span>
-                        {source_code}
-                    </div>
+                     </span>
+                     {source_code}
                 </div>
-            <div className="card--border"></div>
+            </div>
         </div>
-    </div>
     );
 }

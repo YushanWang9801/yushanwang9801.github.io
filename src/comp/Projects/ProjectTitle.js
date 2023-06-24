@@ -6,14 +6,14 @@ import "../../css/Project.css";
 function ProjectTitle() {
     return (
         <div className='ProjectTitle'>
-            <h2>My Portfolio</h2>
-            <div className="animated-typing">
+            <h2>My Research</h2>
+            {/* <div className="animated-typing">
             <Typed
             strings={["Hello, Here is a summary of my projects.",]}
                 typeSpeed={80}
                 backSpeed={40}
                 loop />
-            </div>
+            </div> */}
         </div>
     );
 }
