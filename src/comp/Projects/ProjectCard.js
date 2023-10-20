@@ -43,7 +43,7 @@ export default function ProjectCard({proj}) {
             <div className="project-details">
                 <h3>{proj.name}</h3>
                 <h5>{proj.short_desc}</h5>
-                <p>{proj.desc}</p>
+                <p className="full-desc">{proj.desc}</p>
                 <div className="hashtag">
                     {proj.tags.map(tag => (<span>{tag}</span>))}
                 </div>

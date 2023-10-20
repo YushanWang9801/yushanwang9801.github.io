@@ -181,13 +181,16 @@
 .project-grid  .ProjectCard {
     display: flex;
     height: 300px;
+    /* border: black solid 5px; */
 }
 
 .project-grid  .ProjectCard .project-image{
-    width: 500px;
-    margin: 25px 0;
-    height: 250px;
+    width: 600px;
+    margin-top: 50px;
+    height: 225px;
     overflow: hidden;
+    /* border: black solid 5px; */
+
 }
 
 .project-grid  .ProjectCard .project-image img{
@@ -198,7 +201,7 @@
 
 .project-grid .ProjectCard .project-details {
     margin-top: 25px;
-    margin-left: 5%;
+    margin-left: 2%;
     width: 100%;
 }
 
@@ -234,4 +237,82 @@
     font-weight: normal;
     padding-left: 3px;
     padding-top: 1px;
+}
+
+@media screen and (min-width: 761px) and (max-width: 1079px) {
+    .ProjectCard .hashtag{
+        visibility: hidden;
+    }
+
+    .project-grid .ProjectCard .link {
+        font-weight: bold;
+        font-size: 1em;
+        color: var(--primary);
+    
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 50px 10px 0px;
+        margin-top: -25px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .project-grid  .ProjectCard {
+        flex-direction: column;
+        height: 500px;
+        /* border: 2px var(--primary) solid; */
+        border-radius: 5vw;
+    }
+
+    .project-grid  .ProjectCard .project-image{
+        width: 90vw;
+        height: 100%;
+        margin-top: 0px;
+        margin-left: 5vw;
+        /* border: black solid 5px; */
+    
+    }
+    
+    .project-grid .ProjectCard .project-details {
+        margin-top: 0px;
+        margin-left: 5vw;
+        width: 90vw;
+    }
+
+    .project-grid .project-details .full-desc {
+        visibility: hidden;
+    }
+
+    .project-grid .ProjectCard .hashtag {
+        margin-top: -120px;
+        display: grid;
+        column-gap: 5vw;
+        justify-content: space-between;
+        grid-template-columns: 45% 45%;
+    }
+
+    .project-grid .ProjectCard span {
+        margin-right: 0;
+        margin-top: 2vh;
+        color: var(--secondary);
+        padding: 5px 10px;
+    
+        border: 2px solid var(--primary);
+        background-color: var(--accent);
+    
+        border-radius: 20px;
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    .project-grid .ProjectCard .link .click{
+        border: none;
+        width: 90vw;
+        text-align: center;
+        font-size: 1.1em; 
+        color: var(--primary);
+        margin: 0;
+        visibility: hidden;
+        margin-bottom: -70px;
+    }
 }
