@@ -45,7 +45,7 @@ function AboutSection() {
                     <h3>A digital space for thoughts and updates</h3>
                     <p>
                         This website serves as my personal introduction and project showcase. 
-                        I also share updates and development notes from InjectionOCR and occasional thoughts on frontend/backend engineering in the <a className="external-link" href="/blog">blog page</a>.
+                        I also share updates and development notes from InjectionOCR and occasional thoughts on frontend/backend engineering in the <a className="external-link" href="/#/blog">blog page</a>.
                         I designed and developed the site myself, and I'm fairly happy with its aesthetics and layout.
                     </p>
                 </main>
