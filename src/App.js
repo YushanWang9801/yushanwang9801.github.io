@@ -11,6 +11,9 @@ import {Routes, Route, Navigate } from "react-router-dom";
 
 import {useEffect,} from "react";
 import useLocalStorage from 'use-local-storage';
+import BlogPage from './comp/NewBlog';
+import BlogHome from './comp/BlogHome';
+
 
 // import SingleBlog from './comp/Blog/SingleBlog';
 // import SingleArticle from './comp/Blog/SingleArticle';
@@ -43,10 +46,13 @@ function App() {
         <Routes>
           <Route key="home"     path="/" element={<Mainpage />} />
           <Route key="project"  path="/project" element={<Project />} />
-          <Route key="old_blog"     path="/old_blog/*" element={<Blog theme={theme} />} />
           <Route key="gallery"  path="/gallery" element={<Gallery />} />
           <Route key="me"       path="/me" element={<AboutPage />} />
           <Route key="test"     path="/test" element={<Test />} />
+
+          <Route path="/blog" element={<BlogHome />} />
+          <Route path="/blog/:slug" element={<BlogPage />} />
+          <Route key="old_blog" path="/old_blog/*" element={<Blog theme={theme} />} />
 
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

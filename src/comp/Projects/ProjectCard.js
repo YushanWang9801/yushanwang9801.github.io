@@ -1,16 +1,16 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight }
-            from '@fortawesome/free-solid-svg-icons';
+// import React from 'react';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faArrowRight }
+//             from '@fortawesome/free-solid-svg-icons';
 
 import "../../css/Project.css";
 
 
 export default function ProjectCard({proj}) {
-    let source_code;
-    if (proj.source_code_url !== "#"){
-        source_code = <span className="Code">Source Code</span>;
-    }
+    // let source_code;
+    // if (proj.source_code_url !== "#"){
+    //     source_code = <span className="Code">Source Code</span>;
+    // }
     
     return (
     // <div className="ProjectCard">
@@ -47,13 +47,13 @@ export default function ProjectCard({proj}) {
                 <div className="hashtag">
                     {proj.tags.map(tag => (<span>{tag}</span>))}
                 </div>
-                <div className="link">
+                {/* <div className="link">
                          <span className="click">
                             Click to see project 
                             <FontAwesomeIcon className="faicon" icon={faArrowRight} />
                      </span>
                      {source_code}
-                </div>
+                </div> */}
             </div>
         </div>
     );

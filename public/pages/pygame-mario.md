@@ -1,4 +1,6 @@
-### Mario Run with Pygame 
+## Mario Run with Pygame 
+
+#### Written at 2023-12-20
 
 ![Demo recording of the Mario Runner](./images/mario.gif)
 

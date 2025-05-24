@@ -1,8 +1,12 @@
+## Redbull Racing RB6 with ThreeJS 
+
+#### Written at 2023-12-20
+
+![alt text](./images/rb6_dribble.gif)
+
 Create a Visual exploration | Redbull RB6 website header
 
 Using three.js
-
-![alt text](./images/rb6_dribble.gif)
 
 to run this project locally:
 
