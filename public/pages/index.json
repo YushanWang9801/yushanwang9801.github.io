@@ -9,15 +9,6 @@
     "short_desc": "This article will create a Formula One Redbull Racing Header by using ThreeJS"
   },
   {
-    "title": "ThreeJs: Redbull Racing RB6",
-    "date": "2023-09-01",
-    "slug": "rb6_dribble",
-    "route": "rb6_dribble",
-    "path": "/pages/rb6_dribble.md",
-    "cover": "/images/rb6_dribble.gif", 
-    "short_desc": "This article will create a Formula One Redbull Racing Header by using ThreeJS"
-  },
-  {
     "title": "Pygame: Mario Run",
     "date": "2023-09-01",
     "slug": "pygame-mario",
