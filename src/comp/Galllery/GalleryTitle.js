@@ -8,10 +8,8 @@ const GalleryTitle = () => {
       <h2>Gallery Playground</h2>
       <div className="animated-typing">
       <Typed
-       strings={["Welcome to my 2023 Photo Gallery.", 
-        "I have no idea what to write when I firstly create this gallery.",
-      "Then I come up with ...", 
-    "Photo is my footprint, every moment I captured is the proof of my existence.",]}
+       strings={["Welcome to my Photo Gallery.", 
+        "I have no idea what to write next...",]}
         typeSpeed={60}
         backSpeed={25}
         loop />

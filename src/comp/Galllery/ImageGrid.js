@@ -5,16 +5,16 @@ import {motion} from 'framer-motion';
 import {useState} from "react";
 import "./../../css/ImageGrid.css";
 
-/*const num_to_month = [{name: 'January', num: 1}, {num:2, name: 'February'}, 
-                    {num:3, name: 'March'}, {num:4, name:'April'}, 
-            {num:5, name: 'May'}, {num:6, name: 'June'}, {num: 7, name: 'July'}, 
-            {num:8, name:'August'}, {num:9, name: 'September'}, 
-            {num:10 , name: 'October'}, {num:11, name:'November'}, 
-            {num:12, name:'December'}];
-*/
+/*
+const tags = ["San Francisco", "Music Live", "Goodwood_2022", "London", 
+        "Southend", "Santa Monica",
+        "Nagoya and Osaka", "798","Music Live", "Goodwood_2019",
+        "Chicago", "Silverstone", "Edinburgh", "Gundam",
+        "Taiwan", "Johns Hopkins University", "Baltimore", 
+        "Atlanta", "All"]; */
 
 const ImageGrid = ({ setSelectedImg }) => {
-    const [category, setCategory] = useState("All");
+    const [category, setCategory] = useState("San Francisco");
 
     const {docs} = useFirestore('images', category);
     
