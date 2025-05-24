@@ -10,7 +10,7 @@ function Mainpage() {
     return (
         <div className="Mainpage">
             <CoverSection />
-            <AboutSection />
+            {/* <AboutSection /> */}
             <NewsSection />
             <Contact />
         </div>

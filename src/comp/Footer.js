@@ -6,10 +6,12 @@ import { faGithub, faMedium, faInstagram, faLinkedin }
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
+    
     return (
         <div className="footer">
             <div className="pull-left">
-                <middle className="block">&copy; 2023 Yushan Wang. All Rights Reserved.</middle>
+                <span className="block">&copy; {currentYear} Yushan Wang. All Rights Reserved.</span>
             </div>
             <div className="pull-right">
                 <ul className="footer-icons">
@@ -19,12 +21,12 @@ const Footer = () => {
                             target="_blank" rel="noreferrer" aria-label="Find me on Github">
                             <FontAwesomeIcon className="faicon" icon={faGithub} /></a>
                     </li>
-                    <li>
+                    {/* <li>
                         <div className="tooltip">LinkedIn </div>
                         <a href="https://www.linkedin.com/in/yushan1089/"
                             target="_blank" rel="noreferrer" aria-label="Find me on LinkedIn">
                             <FontAwesomeIcon className="faicon" icon={faLinkedin} /></a>
-                    </li>
+                    </li> */}
 
                     <li>
                         <div className="tooltip">Instagram</div>

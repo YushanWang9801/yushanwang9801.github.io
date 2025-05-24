@@ -9,18 +9,20 @@ function AboutSection(){
                 <NameCard />
             </div>
             <div className="aboutRight">
-                <h1>My Latest</h1>
-                <p>
-                I recently graduated from University College London with Distinction
-                in Master of Science, Computer Graphics, Vision and Imaging.
-                </p> 
-                <p>
-                I completed my bachelor degrees at University of California, San Diego with a Double Major in Computer Engineering and Applied Mathematics. 
+                <p> 
+                    Founder of InjectionOCR.<br/>
+                    DevOps Engineer at Beijing Supreium Inc.<br/>
+                    Msc in CGVI, UCL 2022<br/>
+                    Bsc in Computer Engineering, <br/>
+                    Bsc in Applied Mathematics, UCSD 2020<br/>
                 </p> 
                 <p id="optional_paragraph">
-                I worked at IQIYI as a Data Analyst in 2021. 
-                I worked at Jiuyang Media as Software Development Engineer intern during summer 2021, 
-                and did research with NYU Professor Jean-Claude Franchitti. 
+                Academic Lecturer at Beijing Vision Overseas Education Ltd.<br/>
+                Teachinng Instructor at Yes Education Vancouver.<br/>
+                Research Fellow at Eye Moorefield Hospital<br/>
+                Data Analyst at IQIYI. <br/>
+                SWE Internship at Jiuyang Media.<br/>
+                Cloud Computing research with NYU Prof. Jean-Claude Franchitti. <br/>
                 </p>
             </div>
         </div>

@@ -15,14 +15,16 @@ function CoverSection() {
                 <div className="second-row">
                     <div className="title">
                         <a href="/#/me">
-                        <span id="title">Software Developer, Researcher, Ametur Writer, Photographer</span>
+                        <span id="title">Software Developer, Part Time Blogger, Photographer</span>
                         <span >
                         <FontAwesomeIcon className="faicon" icon={faCircleArrowRight} />
                         </span> 
                         </a>
                     </div>
-                    <div className="institution">Research Fellow - Eye Moorefield Hospital, CGVI - UCL, <br />
-                                    Computer Engineering - UC San Diego</div>
+                    <div className="institution">Founder of InjectionOCR.<br/>
+                    DevOps Engineer at Beijing Supreium Inc.<br/>
+                    Msc in Computer Graphics, Vision and Imaging, UCL 2022. <br/>
+                    Bsc in Computer Engineering, Applied Mathematics, UCSD 2020</div>
                 </div>
             </div>
             <div className="rightpage">

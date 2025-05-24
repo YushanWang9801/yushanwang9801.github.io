@@ -10,7 +10,7 @@ import { projectFirestore, timestamp } from '../firebase/config';
 function Contact(){
     return (
       <div className='Contact' id="contact">
-        <IconSection />
+        {/* <IconSection /> */}
         <InfoSection />
       </div>
     );
