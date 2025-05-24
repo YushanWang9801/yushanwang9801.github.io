@@ -43,7 +43,7 @@ function App() {
         <Routes>
           <Route key="home"     path="/" element={<Mainpage />} />
           <Route key="project"  path="/project" element={<Project />} />
-          <Route key="blog"     path="/blog/*" element={<Blog theme={theme} />} />
+          <Route key="old_blog"     path="/old_blog/*" element={<Blog theme={theme} />} />
           <Route key="gallery"  path="/gallery" element={<Gallery />} />
           <Route key="me"       path="/me" element={<AboutPage />} />
           <Route key="test"     path="/test" element={<Test />} />

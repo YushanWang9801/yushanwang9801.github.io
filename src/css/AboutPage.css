@@ -14,7 +14,7 @@
 	grid-column: 2;
 }
 .AboutPage main {
-	max-width: 600px;
+	max-width: 680px;
 	margin: auto;
 	text-align: justify;
 }
@@ -52,6 +52,8 @@
 .AboutPage h1 {
 	text-align: center;
 }
+
+
 .AboutPage .focusing {
 	font-family: 'questa-grande';
 	text-transform: uppercase;
@@ -64,12 +66,16 @@
 	text-transform: uppercase;
 	font-size: 0.5em;
 }
+
 .AboutPage .heart {
+	font-size: 1.4em;
+	text-align: center;
 	font-family: 'ltc-bodoni-175';
 	text-transform: uppercase;
-	font-size: 2em;
 	color: var(--secondary);
+	padding-bottom: 0.3em;
 }
+
 .AboutPage cite {
 	font-family: 'brandon-grotesque';
 	font-style: normal;
@@ -89,11 +95,57 @@
 	letter-spacing: 0.1em;
 	color: var(--primary);
 }
+
 .AboutPage aside {
 	font-family: 'brandon-grotesque';
 	font-style: italic;
 	text-align: right;
 }
+
+/* New content blocks */
+.AboutPage .section-title {
+    font-family: 'brandon-grotesque';
+    font-size: 1.4em;
+    color: var(--primary);
+    margin-top: 2em;
+    text-transform: uppercase;
+    border-left: 4px solid var(--primary);
+    padding-left: 0.5em;
+}
+
+.AboutPage .founder-highlight {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.AboutPage a.external-link {
+    color: var(--primary);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.AboutPage a.external-link:hover {
+    color: var(--secondary);
+}
+
+/* Blog mention */
+.AboutPage .blog-note {
+    font-style: italic;
+    font-family: 'brandon-grotesque';
+    text-align: center;
+    margin-top: 2em;
+    color: #555;
+}
+
+/* Optional: subtle border for clarity */
+.AboutPage .highlight-block {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 1em;
+    margin-top: 1.5em;
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 8px;
+}
+
 
 @media only screen and (min-width:1080px) {
 	/* Layout */
@@ -116,13 +168,13 @@
 	/* Title */
 	.AboutPage .focusing {
 		font-size: 2.2em;
-		margin-bottom: -15px;
+		margin-bottom: -10px;
 	}
 	.AboutPage .the {
 		font-size: 0.75em;
 	}
 	.AboutPage .heart {
-		font-size: 3.8em;
+		font-size: 2.8em;
 	}
 	.AboutPage main h2 {
 		color: var(--primary);

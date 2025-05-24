@@ -1,7 +1,7 @@
 import "./../css/Footer.css";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faMedium, faInstagram, faLinkedin }
+import { faGithub, faMedium, faInstagram, }
     from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 

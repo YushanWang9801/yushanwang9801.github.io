@@ -78,7 +78,7 @@ export default function AppButtons({
           onClick={() => {
             setSelectedIndex(index);
             setCurrentComponent("button");
-            navigate(`/blog${route}`);
+            navigate(`/old_blog${route}`);
           }}
           sx={{
             borderRadius: 0,

@@ -2,7 +2,7 @@ import {motion} from 'framer-motion';
 
 import "./../css/Contact.css";
 import "./../css/style.css";
-import IconSection from "./IconSection.js";
+// import IconSection from "./IconSection.js";
 
 import {useState} from 'react';
 import { projectFirestore, timestamp } from '../firebase/config';
