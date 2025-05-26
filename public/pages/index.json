@@ -1,5 +1,14 @@
 [
   {
+    "title": "AllRGB Image Generator with Streamlit",
+    "date": "2023-05-29",
+    "slug": "AllRGB-streamlit",
+    "route": "AllRGB-streamlit",
+    "path": "/pages/allRGB2.md",
+    "cover": "/images/allRGB.png", 
+    "short_desc": "Today, I will be making a website that performs ALLRGB generation."
+  },
+  {
     "title": "ThreeJs: Redbull Racing RB6 (Part III)",
     "date": "2023-04-16",
     "slug": "rb6-dribble-part3",
@@ -25,6 +34,15 @@
     "path": "/pages/rb6_dribble1.md",
     "cover": "/images/rb6_dribble.gif", 
     "short_desc": "This article will create a Formula One Redbull Racing Header by using ThreeJS"
+  },
+  {
+    "title": "AllRGB Image Generator",
+    "date": "2023-03-27",
+    "slug": "AllRGB-image-generator",
+    "route": "AllRGB-image-generator",
+    "path": "/pages/allRGB1.md",
+    "cover": "/images/allRGB.png", 
+    "short_desc": "The ALLRGB image is to generate an image that uses all 16,777,216 colors and exactly once."
   },
   {
     "title": "Pygame: Mario Run (Part III)",
