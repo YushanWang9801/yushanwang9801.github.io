@@ -1,28 +1,73 @@
 [
   {
-    "title": "ThreeJs: Redbull Racing RB6",
-    "date": "2023-09-01",
-    "slug": "rb6_dribble",
-    "route": "rb6_dribble",
-    "path": "/pages/rb6_dribble.md",
+    "title": "ThreeJs: Redbull Racing RB6 (Part III)",
+    "date": "2023-04-16",
+    "slug": "rb6-dribble-part3",
+    "route": "rb6-dribble-part3",
+    "path": "/pages/rb6_dribble3.md",
+    "cover": "/images/rb6_dribble.gif", 
+    "short_desc": "This article will create a Formula One Redbull Racing Header by using ThreeJS"
+  },  
+  {
+    "title": "ThreeJs: Redbull Racing RB6 (Part II)",
+    "date": "2023-04-15",
+    "slug": "rb6-dribble-part2",
+    "route": "rb6-dribble-part2",
+    "path": "/pages/rb6_dribble2.md",
     "cover": "/images/rb6_dribble.gif", 
     "short_desc": "This article will create a Formula One Redbull Racing Header by using ThreeJS"
   },
   {
-    "title": "Pygame: Mario Run",
-    "date": "2023-09-01",
-    "slug": "pygame-mario",
-    "route": "pygame-mario",
-    "path": "/pages/pygame-mario.md",
+    "title": "ThreeJs: Redbull Racing RB6 (Part I)",
+    "date": "2023-04-13",
+    "slug": "rb6-dribble-part1",
+    "route": "rb6-dribble-part1",
+    "path": "/pages/rb6_dribble1.md",
+    "cover": "/images/rb6_dribble.gif", 
+    "short_desc": "This article will create a Formula One Redbull Racing Header by using ThreeJS"
+  },
+  {
+    "title": "Pygame: Mario Run (Part III)",
+    "date": "2023-03-05",
+    "slug": "pygame-mario-part3",
+    "route": "pygame-mario-part3",
+    "path": "/pages/pygame-mario3.md",
+    "cover": "/images/mario.gif", 
+    "short_desc": "We are almost finish building mario run..."
+  },
+  {
+    "title": "Pygame: Mario Run (Part II)",
+    "date": "2023-03-04",
+    "slug": "pygame-mario-part2",
+    "route": "pygame-mario-part2",
+    "path": "/pages/pygame-mario2.md",
+    "cover": "/images/mario.gif", 
+    "short_desc": "we will continue to build a simple Mario run game with Pygame part II"
+  },
+  {
+    "title": "Pygame: Mario Run (Part I)",
+    "date": "2023-03-03",
+    "slug": "pygame-mario-part1",
+    "route": "pygame-mario-part1",
+    "path": "/pages/pygame-mario1.md",
     "cover": "/images/mario.gif", 
     "short_desc": "This article will show how to use Pygame to build a simple Mario run game"
   },
   {
-    "title": "OpenCV: Virtual Keyboard",
-    "date": "2023-09-01",
-    "slug": "virtual-keyboard",
-    "route": "virtual-keyboard",
-    "path": "/pages/Virtual_keyboard.md",
+    "title": "OpenCV: Virtual Keyboard Project (Part II)",
+    "date": "2023-02-11",
+    "slug": "virtual-keyboard-partII",
+    "route": "virtual-keyboard-partII",
+    "path": "/pages/Virtual_keyboard2.md",
+    "cover": "/images/Virtual_Keyboard.jpg", 
+    "short_desc": "Today, continue on Virtual Keyboard Project."
+  },
+  {
+    "title": "OpenCV: Virtual Keyboard Project (Part I)",
+    "date": "2023-02-09",
+    "slug": "virtual-keyboard-partI",
+    "route": "virtual-keyboard-partI",
+    "path": "/pages/Virtual_keyboard1.md",
     "cover": "/images/Virtual_Keyboard.jpg", 
     "short_desc": "Today, we are going to use OpenCV to build this amazing Virtual Keyboard Project."
   }
