@@ -21,6 +21,8 @@
   overflow: hidden;
   transition: box-shadow 0.3s ease;
   background-color: var(--background);
+  max-height: 180px;
+  margin-bottom: 20px;
 }
 
 .blog-card:hover {
@@ -43,6 +45,7 @@
   width: 40%;
   object-fit: cover;
   height: auto;
+  display: center;
 }
 
 /* 内容部分 */
@@ -69,6 +72,98 @@
 .blog-desc {
   font-size: 1rem;
   color: var(--secondary);
+}
+
+[data-pagination],
+[data-pagination] *,
+[data-pagination] *:before,
+[data-pagination] *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: auto;
+}
+
+[data-pagination] {
+  font-size: 8pt;
+  line-height: 1;
+  font-weight: 400;
+  font-family: 'Open Sans', 'Source Sans Pro', Roboto, 'HelveticaNeue-Light', 
+              'Helvetica Neue Light', 'Helvetica Neue', 'Myriad Pro', 'Segoe UI', 
+              Myriad, Helvetica, 'Lucida Grande', 'DejaVu Sans Condensed', 
+              'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  margin: 2em auto;
+  text-align: center;
+  transition: font-size .2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+[data-pagination] ul {
+  list-style-type: none;
+  display: flex;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  gap: 0.25rem;
+}
+
+[data-pagination] ul li {
+  display: inline-block;
+  font-size: 100%;
+  width: auto;
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
+}
+
+[data-pagination] > a {
+  font-size: 140%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+}
+
+[data-pagination] a {
+  color: var(--secondary);
+  font-size: 100%;
+  padding: 0.5em 0.75em;
+  text-decoration: none;
+  display: inline-block;
+  min-width: 2rem;
+  text-align: center;
+  border-radius: 3px;
+}
+
+[data-pagination] a:focus,
+[data-pagination] a:hover {
+  color: var(--primary);
+  background-color: var(--background);
+}
+
+[data-pagination] li.current {
+  background: var(--background);
+}
+
+[data-pagination] li.current a {
+  color: var(--secondary);
+  font-weight: bold;
+}
+
+/* Disabled & Hidden Styles */
+[data-pagination] .disabled,
+[data-pagination] [hidden],
+[data-pagination] [disabled] {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
 }
 
 @media (max-width: 768px) {
@@ -158,4 +253,45 @@
   height: auto;
   display: block;
   margin: 1rem auto;
+}
+
+
+@media (min-width: 350px) {
+  [data-pagination] {
+    font-size: 10pt;
+  }
+}
+
+@media (min-width: 500px) {
+  [data-pagination] {
+    font-size: 12pt;
+    gap: 0.75rem;
+  }
+  
+  [data-pagination] ul {
+    gap: 0.5rem;
+  }
+}
+
+@media (min-width: 700px) {
+  [data-pagination] {
+    font-size: 14pt;
+  }
+}
+
+@media (min-width: 900px) {
+  [data-pagination] {
+    font-size: 16pt;
+  }
+}
+
+/* Ion icons fallback */
+.ion-chevron-left::before {
+  content: "‹";
+  display: inline-block;
+}
+
+.ion-chevron-right::before {
+  content: "›";
+  display: inline-block;
 }
