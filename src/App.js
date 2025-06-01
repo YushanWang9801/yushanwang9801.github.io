@@ -51,7 +51,7 @@ function App() {
           <Route key="test"     path="/test" element={<Test />} />
 
           <Route path="/blog" element={<BlogHome />} />
-          <Route path="/blog/:slug" element={<BlogPage />} />
+          <Route path="/blog/:slug" element={<BlogPage theme={theme} />} />
           <Route key="old_blog" path="/old_blog/*" element={<Blog theme={theme} />} />
 
           <Route path="*" element={<Navigate to="/" replace />} />

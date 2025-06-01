@@ -2,25 +2,23 @@
 
 #### Written at Apr 16, 2023
 
-![alt text](./images/rb6_dribble.gif)
-
-<img src="./images/rb6_dribble.gif" alt="demo.gif" width="400"/>
+![RB6 Animation](./images/rb6_dribble.gif)
 
 Welcome to the final part of the template, now we just need to add a few HTML elements then our website will be ready to go. I used the Optima font for this template, the font.ttf file could be located under the public directory.
 
-Back in 2019, Redbull Racing’s title Sponsor is Aston Martin and I always find the font for AMR quite appealing. The Optima font is quite close to the Aston Martin font:
+Back in 2019, Redbull Racing's title Sponsor is Aston Martin and I always find the font for AMR quite appealing. The Optima font is quite close to the Aston Martin font:
 
 ![ASTON MARTIN LOGO for font demo](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*rL7e8T9JOIg6Mdvm.png)
 
-Now let us create a header on the website:
+### Creating the Header
 
-```
+```html
 <nav class="header">
       <a href="https://yushanwang9801.github.io/"><h1 id="yushan">YushanWang9801</h1></a>
       <ul>
-        <li>Drivers</li> 
-        <li>Mechanics</li> 
-        <li>Races</li> 
+        <li>Drivers</li>
+        <li>Mechanics</li>
+        <li>Races</li>
         <li><img class="redbull-icon" src="icon1.png" alt="redbull racing logo"></li>
         <li>Story</li>
         <li>Team</li>
@@ -34,9 +32,9 @@ Now let us create a header on the website:
 
 Feel free to link to your own portfolio and change the Name Icon to your own by changing the text in <a> element.
 
-Then you will realize we need the header to appear above the ThreeJS canvas, to do that we need to add a few lines in CSS:
+### CSS Styling for Header
 
-```
+```css
 @font-face {
     font-family: Optima;
     src: url("./OPTIMA.TTF");
@@ -84,18 +82,17 @@ nav ul span {
     border-radius: 30px;
     font-weight: bold;
     color: #FFF;
-    font-family: "Courier New"; 
+    font-family: "Courier New";
 }
 ```
 
-The z-index is to differentiate which elements will appear above the other one. We would like the nav to be on top of the canvas, therefore set the z-index one larger than the other.
+### Adding a Title
 
-The <img> tag, in which I imported the logo, is preprocessed with online to proceed with background removal. You can also find and replace the icon with a few alternative icon files in the public directory.
-
-Then add a title to the middle of the screen:
-
-```
+```html
 <h1 class="title">Red Bull RB6</h1>
+```
+
+```css
 .title {
     color: #fff;
     z-index: 2;
@@ -109,11 +106,14 @@ Then add a title to the middle of the screen:
 }
 ```
 
-Then on the bottom left of the screen, we would like to add a video bar. In order to link a video from youtube, we could use the iframe:
+### Video Bar with YouTube Embed
 
-```
-<iframe src="https://www.youtube.com/embed/-t6cxIeCIjE" 
+```html
+<iframe src="https://www.youtube.com/embed/-t6cxIeCIjE"
         frameborder="0" allowfullscreen></iframe>
+```
+
+```css
 iframe {
     width: 17.6rem;
     height: 9.9rem;
@@ -121,16 +121,14 @@ iframe {
 }
 ```
 
-The link for the video is an advertising film for the RB9 (…I could not find a better one for RB6). Below is the youtube link and is also above in the code, the difference is you need to add the “embed” into the link, and after the “/” is the id for the video:
+### Complete Video Bar Section
 
-For the rest of the video bar, will just be some basic elements for HTML:
-
-```
+```html
 <div class="videobar">
-      <iframe 
-            src="https://www.youtube.com/embed/-t6cxIeCIjE" 
+      <iframe
+            src="https://www.youtube.com/embed/-t6cxIeCIjE"
             frameborder="0" allowfullscreen></iframe>
-      <div class="intro">      
+      <div class="intro">
         <h3>The Rhythm of the Factory - RB9</h3>
         <h3>Presented by </h3>
         <h3>Oracle Red Bull Racing</h3>
@@ -152,9 +150,7 @@ For the rest of the video bar, will just be some basic elements for HTML:
     </div>
 ```
 
-and accordingly the CSS:
-
-```
+```css
 .videobar {
     display: flex;
     position: absolute;
@@ -205,9 +201,9 @@ iframe {
 }
 ```
 
-Lastly, we would like to add a brief text description on the right bottom of the screen:
+### Adding a Description Text
 
-```
+```html
 <div class="short">
       <span> RB6 set the fastest time in 15 out of the 19 rounds in Qualifying.</span>
       <span>"probably the car with the most downforce in the history of F1"</span>
@@ -215,20 +211,18 @@ Lastly, we would like to add a brief text description on the right bottom of the
    </div>
 ```
 
-For css:
-
-```
+```css
 .short {
     position: absolute;
     right: 5rem;
     bottom: 4rem;
     z-index: 1;
-    
+
     width: 30rem;
     height: 8.8rem;
     font-size: 1.2rem;
     color: #FFF;
-    
+
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -239,6 +233,6 @@ For css:
 }
 ```
 
-Now you should have a Formula One redbull racing Header working.
+Now you should have a Formula One Redbull Racing Header working.
 
-![captionless image](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*P9t9sFeiStvdf3i3_REoEg.png)
+![Final Result](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*P9t9sFeiStvdf3i3_REoEg.png)

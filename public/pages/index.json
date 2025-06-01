@@ -1,11 +1,38 @@
-[
+[  
+  {
+    "title": "Vue + Vite: French FlashCard (Published)",
+    "date": "2023-06-21",
+    "slug": "french-flashcard-published",
+    "route": "french-flashcard-published",
+    "path": "/pages/french_flashcard3.md",
+    "cover": "/images/french_flashcard3.png",
+    "short_desc": "French Clashcard published with LEA 800 and Taxi A1 vocab list."
+  },
+  {
+    "title": "Vue + Vite: French FlashCard (Part II)",
+    "date": "2023-06-14",
+    "slug": "french-flashcard-part2",
+    "route": "french-flashcard-part2",
+    "path": "/pages/french_flashcard2.md",
+    "cover": "/images/french_flashcard.png",
+    "short_desc": "Wrapping on the flashcard part and building a category page."
+  },
+  {
+    "title": "Vue + Vite: French FlashCard (Part I)",
+    "date": "2023-06-11",
+    "slug": "french-flashcard-part1",
+    "route": "french-flashcard-part1",
+    "path": "/pages/french_flashcard1.md",
+    "cover": "/images/french_flashcard.png",
+    "short_desc": "While waiting for my work visa application, let's start to learn French."
+  },
   {
     "title": "AllRGB Image Generator with Streamlit",
     "date": "2023-05-29",
     "slug": "AllRGB-streamlit",
     "route": "AllRGB-streamlit",
     "path": "/pages/allRGB2.md",
-    "cover": "/images/allRGB.png", 
+    "cover": "/images/allRGB.png",
     "short_desc": "Today, I will be making a website that performs ALLRGB generation."
   },
   {
@@ -14,16 +41,16 @@
     "slug": "rb6-dribble-part3",
     "route": "rb6-dribble-part3",
     "path": "/pages/rb6_dribble3.md",
-    "cover": "/images/rb6_dribble.gif", 
+    "cover": "/images/rb6_dribble.gif",
     "short_desc": "This article will create a Formula One Redbull Racing Header by using ThreeJS"
-  },  
+  },
   {
     "title": "ThreeJs: Redbull Racing RB6 (Part II)",
     "date": "2023-04-15",
     "slug": "rb6-dribble-part2",
     "route": "rb6-dribble-part2",
     "path": "/pages/rb6_dribble2.md",
-    "cover": "/images/rb6_dribble.gif", 
+    "cover": "/images/rb6_dribble.gif",
     "short_desc": "This article will create a Formula One Redbull Racing Header by using ThreeJS"
   },
   {
@@ -32,7 +59,7 @@
     "slug": "rb6-dribble-part1",
     "route": "rb6-dribble-part1",
     "path": "/pages/rb6_dribble1.md",
-    "cover": "/images/rb6_dribble.gif", 
+    "cover": "/images/rb6_dribble.gif",
     "short_desc": "This article will create a Formula One Redbull Racing Header by using ThreeJS"
   },
   {
@@ -41,7 +68,7 @@
     "slug": "AllRGB-image-generator",
     "route": "AllRGB-image-generator",
     "path": "/pages/allRGB1.md",
-    "cover": "/images/allRGB.png", 
+    "cover": "/images/allRGB.png",
     "short_desc": "The ALLRGB image is to generate an image that uses all 16,777,216 colors and exactly once."
   },
   {
@@ -50,7 +77,7 @@
     "slug": "pygame-mario-part3",
     "route": "pygame-mario-part3",
     "path": "/pages/pygame-mario3.md",
-    "cover": "/images/mario.gif", 
+    "cover": "/images/mario.gif",
     "short_desc": "We are almost finish building mario run..."
   },
   {
@@ -59,7 +86,7 @@
     "slug": "pygame-mario-part2",
     "route": "pygame-mario-part2",
     "path": "/pages/pygame-mario2.md",
-    "cover": "/images/mario.gif", 
+    "cover": "/images/mario.gif",
     "short_desc": "we will continue to build a simple Mario run game with Pygame part II"
   },
   {
@@ -68,7 +95,7 @@
     "slug": "pygame-mario-part1",
     "route": "pygame-mario-part1",
     "path": "/pages/pygame-mario1.md",
-    "cover": "/images/mario.gif", 
+    "cover": "/images/mario.gif",
     "short_desc": "This article will show how to use Pygame to build a simple Mario run game"
   },
   {
@@ -77,7 +104,7 @@
     "slug": "virtual-keyboard-partII",
     "route": "virtual-keyboard-partII",
     "path": "/pages/Virtual_keyboard2.md",
-    "cover": "/images/Virtual_Keyboard.jpg", 
+    "cover": "/images/Virtual_Keyboard.jpg",
     "short_desc": "Today, continue on Virtual Keyboard Project."
   },
   {
@@ -86,7 +113,7 @@
     "slug": "virtual-keyboard-partI",
     "route": "virtual-keyboard-partI",
     "path": "/pages/Virtual_keyboard1.md",
-    "cover": "/images/Virtual_Keyboard.jpg", 
+    "cover": "/images/Virtual_Keyboard.jpg",
     "short_desc": "Today, we are going to use OpenCV to build this amazing Virtual Keyboard Project."
   }
 ]
