@@ -2,103 +2,127 @@
 
 #### Written at Apr 13, 2023
 
-![alt text](./images/rb6_dribble.gif)
+![RB6 Animation](./images/rb6_dribble.gif)
 
-Today, we will explore how to create captivating 3D websites with just a few lines of code using Three.js, a library built on top of WebGL. This beginner’s guide will start from the very basics of Three.js, allowing even those with no prior experience to follow along. This tutorial series will not only delve deeper into Three.js but also teach how to model with Blender, making it a comprehensive learning resource for those interested in 3D web development.
+Today, we will explore how to create captivating 3D websites with just a few lines of code using Three.js, a library built on top of WebGL. This beginner's guide will start from the very basics of Three.js, allowing even those with no prior experience to follow along. This tutorial series will not only delve deeper into Three.js but also teach how to model with Blender, making it a comprehensive learning resource for those interested in 3D web development.
 
-The idea of the design is generated from the Scuderia Ferrari Web Header
+The design inspiration comes from the Scuderia Ferrari Web Header by [Reynaldi Fachriza](https://dribbble.com/reyfachriza) on Dribble. While I'm a huge Ferrari fan, given their recent Formula 1 performance, I decided to create a website featuring one of the best motorsport designs in Formula One history — the Red Bull RB6.
 
-Made from @[Reynaldi Fachriza](https://dribbble.com/reyfachriza) in Dribble. Even though I am a huge Ferrari fan, yet we both know How Ferrari performs in these recent years in Formula1, so Instead of creating a website for Ferrari, I switch my design to one of the best motorsport designs in Formula One history — RB6.
+### Project Resources
+- **Full code**: [GitHub Repository](https://github.com/YushanWang9801/rb6_dribble)
+- **Live Demo**: [Personal Website](https://yushanwang9801.github.io/rb6_dribble/)
 
-The full code could be found on Github:
+### Getting Started
 
-https://github.com/YushanWang9801/rb6_dribble
+#### Prerequisites
+1. Install Node.js on your local environment
+2. Create an empty directory and run:
 
-The Demo of this project could be found on my personal website:
-
-https://yushanwang9801.github.io/rb6_dribble/
-
-To get started, You need to have NodeJs installed on your local environment. I created my website with Vite, so make an empty directory, pop up a terminal, and type the following commands:
-
-```
- npm create vite@latest
- npm install three
+```bash
+npm create vite@latest
+npm install three
 ```
 
-We will be mainly using threeJS for our website. Or if one would like to directly run my code from GitHub, after installation of the packages, one could just type:
+Alternatively, to run my code directly from GitHub:
 
-```
+```bash
+npm install
 npm run dev
 ```
 
-After, the installation let us start writing some code. We will create a JavaScript file (main.js) to handle the three webcanvas. Firstly, there are a few key elements for 3D environments.
+### Setting Up the Three.js Environment
 
-We need a scene, camera, and renderer.
+Create a JavaScript file (`main.js`) to handle the Three.js canvas. The essential elements for any 3D environment are:
 
-```
+1. **Scene** - The container for all 3D objects
+2. **Camera** - Determines what appears on screen
+3. **Renderer** - Draws everything to the screen
+
+```javascript
 import * as THREE from 'three';
+
+// Initialize scene with dark background
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0x111111);
-const camera = new THREE.PerspectiveCamera( 45, sizes.width/sizes.height, 1, 1000 );
-camera.rotation.y = 45/180*Math.PI;
-camera.position.x = 20;
-camera.position.y = 20;
-camera.position.z = 30;
+
+// Set up camera
 const sizes = {
     width: window.innerWidth,
-    height: window.innerHeight,
+    height: window.innerHeight
 };
+const camera = new THREE.PerspectiveCamera(45, sizes.width/sizes.height, 1, 1000);
+camera.rotation.y = 45/180*Math.PI;
+camera.position.set(20, 20, 30);
+
+// Configure renderer
 const canvas = document.querySelector(".webcanvas");
 const renderer = new THREE.WebGLRenderer({canvas});
 renderer.setSize(sizes.width, sizes.height);
 renderer.setPixelRatio(2);
 ```
 
-We set the renderer to have the size of the window’s inner width and window inner height.
+### HTML Setup
 
-After that, the code might not work, because still we need to add a web canvas on the index.html, the <body> content.
+Add this to your `index.html`:
 
-```
-<canvas class="webcanvas"></canvas>
-<script type="module" src="/src/main.js"></script>
-```
-
-Now, your screen will look totally dark. That is because we have not added light or any objects inside the canvas. Now let us add light and load the Redbull car to the canvas.
-
-```
-const ambient_light = new THREE.AmbientLight( 0x404040 ); // soft white light
-scene.add( ambient_light );
+```html
+<body>
+    <canvas class="webcanvas"></canvas>
+    <script type="module" src="/src/main.js"></script>
+</body>
 ```
 
-This will create an ambient line to the canvas. Then to add a working RedBull car model to the canvas, we need to import the GLTFLoader and make sure you have the rb6.glb file added to your public directory. The RB6.glb model file can be found in my public dir in my GitHub repo. I pre-rendered the surface, therefore you would not be needing the surface materials. Then the below code will load the model
+### Adding Lighting
 
+Currently, your screen will be dark. Let's add ambient lighting:
+
+```javascript
+const ambient_light = new THREE.AmbientLight(0x404040); // soft white light
+scene.add(ambient_light);
 ```
+
+### Loading the RB6 Model
+
+We'll use the GLTFLoader to import our Red Bull car model. The `rb6.glb` file should be in your public directory.
+
+```javascript
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+
 const assetLoader = new GLTFLoader();
 let mixer, model;
-assetLoader.load(FILEPATH, function ( gltf ) {
-    model = gltf.scene.children[0];
-    mixer = new THREE.AnimationMixer( model );
-    const animations = gltf.animations;
-    animations.forEach( function (clip) {
-        const action = mixer.clipAction(clip);
-        action.play();
-    });
-    const skeleton = new THREE.SkeletonHelper( model );
-    skeleton.visible = false;
-    scene.add( skeleton );
-    scene.add(model);
-    model.position.y += 3.5;
-    model.position.x += 5;
-    model.position.z += 3;
-    model.rotation.x = Math.PI/2-0.05 ;
-    model.rotation.y = 0;
-    model.rotation.z -= Math.PI/2;
-} ,
+
+assetLoader.load(
+    '/rb6.glb',
+    function(gltf) {
+        model = gltf.scene.children[0];
+        mixer = new THREE.AnimationMixer(model);
+
+        // Play all animations
+        gltf.animations.forEach(clip => {
+            mixer.clipAction(clip).play();
+        });
+
+        // Configure model position and rotation
+        model.position.set(5, 3.5, 3);
+        model.rotation.set(
+            Math.PI/2 - 0.05,
+            0,
+            -Math.PI/2
+        );
+
+        scene.add(model);
+    },
     undefined,
-    (error) => {
-    console.error(error);
-    }
+    (error) => console.error(error)
 );
 ```
 
-Now you should have an RB6 loaded on the screen. In the next part, we will have the RB6 rotating on the screen, and we will be adding the rest elements in the next article.
+### Next Steps
+
+In Part II, we'll:
+1. Animate the RB6 model
+2. Add interactive controls
+3. Enhance the scene with additional elements
+4. Implement responsive design for different screen sizes
+
+Stay tuned for the next installment where we'll bring this 3D experience to life!
