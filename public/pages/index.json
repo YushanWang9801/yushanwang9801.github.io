@@ -1,4 +1,23 @@
-[   {
+[ 
+  {
+    "title": "CCC Junior 2022 Solutions: Complete Python Walkthrough",
+    "date": "2023-06-27",
+    "slug": "ccc_junior_2022",
+    "route": "ccc_junior_2022",
+    "path": "/pages/ccc_junior_2022.md",
+    "cover": "/images/ccc_junior_2022.png",
+    "short_desc": ""
+  },
+  {
+    "title": "CCC Junior 2023 Solutions: Complete Python Walkthrough",
+    "date": "2023-06-26",
+    "slug": "ccc_junior_2023",
+    "route": "ccc_junior_2023",
+    "path": "/pages/ccc_junior_2023.md",
+    "cover": "/images/ccc_junior_2023.png",
+    "short_desc": ""
+  },  
+  {
     "title": "My Unexpected CCC Junior Coaching Gig in Vancouver: Why Input/Output Mastery could be Your Secret Weapon",
     "date": "2023-06-24",
     "slug": "ccc_junior",
