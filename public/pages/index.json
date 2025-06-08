@@ -1,7 +1,15 @@
-[  
+[   {
+    "title": "My Unexpected CCC Junior Coaching Gig in Vancouver: Why Input/Output Mastery could be Your Secret Weapon",
+    "date": "2023-06-24",
+    "slug": "ccc_junior",
+    "route": "ccc_junior",
+    "path": "/pages/ccc_junior.md",
+    "cover": "/images/ccc_junior.png",
+    "short_desc": ""
+  },
   {
     "title": "Vue + Vite: French FlashCard (Published)",
-    "date": "2023-06-21",
+    "date": "2023-06-18",
     "slug": "french-flashcard-published",
     "route": "french-flashcard-published",
     "path": "/pages/french_flashcard3.md",
