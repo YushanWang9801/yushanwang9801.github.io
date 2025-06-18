@@ -3,12 +3,11 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 
-const tags = ["San Francisco", "Music Live", "Goodwood_2022", "London", 
-        "Southend", "Santa Monica",
-        "Nagoya and Osaka", "798","Music Live", "Goodwood_2019",
-        "Chicago", "Silverstone", "Edinburgh", "Gundam",
-        "Taiwan", "Johns Hopkins University", "Baltimore", 
-        "Atlanta", "All"];
+const tags = ["San Francisco", "Goodwood_2022", "London", 
+        "Southend", "Santa Monica", "Nagoya and Osaka", "798",
+        "Music Live", "Goodwood_2019", "Chicago", "Silverstone", 
+        "Edinburgh", "Gundam", "Taiwan", "Johns Hopkins University", 
+        "Baltimore", "Atlanta", "All"];
 
 const settings = {
     className: "slider variable-width",
