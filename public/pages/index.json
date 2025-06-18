@@ -1,4 +1,22 @@
-[ 
+[
+  {
+    "title": "CCC Junior 2024 Solutions: Complete Python Walkthrough",
+    "date": "2023-04-24",
+    "slug": "ccc_junior_2024",
+    "route": "ccc_junior_2024",
+    "path": "/pages/ccc_junior_2024.md",
+    "cover": "/images/ccc_junior_2024.png",
+    "short_desc": "The 2024 Canadian Computing Competition (Junior) featured five problems testing basics like..."
+  },
+  {
+    "title": "Turning a Page",
+    "date": "2023-08-18",
+    "slug": "turning_a_page",
+    "route": "turning_a_page",
+    "path": "/pages/teaching.md",
+    "cover": "/images/turning.png",
+    "short_desc": "While disappointing, it gave me a chance to reassess, reset, and think carefully about the next phase."
+  },
   {
     "title": "CCC Junior 2022 Solutions: Complete Python Walkthrough",
     "date": "2023-06-27",
@@ -6,7 +24,7 @@
     "route": "ccc_junior_2022",
     "path": "/pages/ccc_junior_2022.md",
     "cover": "/images/ccc_junior_2022.png",
-    "short_desc": ""
+    "short_desc": "The 2022 Canadian Computing Competition Junior division featured innovative problems..."
   },
   {
     "title": "CCC Junior 2023 Solutions: Complete Python Walkthrough",
@@ -15,8 +33,8 @@
     "route": "ccc_junior_2023",
     "path": "/pages/ccc_junior_2023.md",
     "cover": "/images/ccc_junior_2023.png",
-    "short_desc": ""
-  },  
+    "short_desc": "The 2023 Canadian Computing Competition Junior division featured 5 problems testing fundamental programming skills..."
+  },
   {
     "title": "My Unexpected CCC Junior Coaching Gig in Vancouver: Why Input/Output Mastery could be Your Secret Weapon",
     "date": "2023-06-24",
@@ -24,7 +42,7 @@
     "route": "ccc_junior",
     "path": "/pages/ccc_junior.md",
     "cover": "/images/ccc_junior.png",
-    "short_desc": ""
+    "short_desc": "Never lose points to what you can control—especially input/output."
   },
   {
     "title": "Vue + Vite: French FlashCard (Published)",

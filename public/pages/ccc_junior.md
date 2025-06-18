@@ -21,9 +21,7 @@ Unlike the Senior division which delves into complex algorithms and mathematical
 
 Essentially, no advanced computer science background is required. If you can process sequences, recognize patterns, and solve step-by-step problems, you're competition-ready.
 
-###V The #1 Mistake Smart Students Make: Ignoring I/O
-
-Here's my confession: In my first programming contest, I solved Q1 perfectly... then spent 45 minutes debugging why the judge rejected it. The culprit? **Incorrect output formatting**. I added an extra space. That pain taught me this golden rule:
+### The #1 Mistake Smart Students Make: Ignoring I/O
 
 > "Never lose points to what you *can* control—especially input/output."
 

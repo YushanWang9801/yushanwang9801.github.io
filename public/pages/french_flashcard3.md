@@ -26,11 +26,11 @@ How My Flashcard App Works
 ![captionless image](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*pJQUn9HBkBvGBnFYZ1Dlaw.png)
 
 ​​Key Features:​​
-✔️ ​​Bilingual cards​​ with French/English sides
-✔️ ​​Self-generated example sentences​​ for context
-✔️ ​​One-click pronunciation​​ using browser’s speech synthesis
-✔️ ​​Mobile-friendly design​​ with swipe gestures
-✔️ ​​Organized curriculum​​ mirroring the textbooks
+*   Bilingual cards​​ with French/English sides
+*   Self-generated example sentences​​ for context
+*   One-click pronunciation​​ using browser’s speech synthesis
+*   Mobile-friendly design​​ with swipe gestures
+*   Organized curriculum​​ mirroring the textbooks
 
 Sample Learning Flow
 ====================
