@@ -9,6 +9,15 @@
     "short_desc": "The 2024 Canadian Computing Competition (Junior) featured five problems testing basics like..."
   },
   {
+    "title": "How to Prepare for BMO Round 1: Teaching Guide + Study Advice",
+    "date": "2024-10-24",
+    "slug": "BMO_preperation",
+    "route": "BMO_preperation",
+    "path": "/pages/BMO.md",
+    "cover": "/images/BMO.jpg",
+    "short_desc": "The British Mathematical Olympiad (BMO) Round 1 is not just an exam."
+  },
+  {
     "title": "Turning a Page",
     "date": "2023-08-18",
     "slug": "turning_a_page",
