@@ -17,11 +17,9 @@
 }
 
 .blog-card {
-  border-radius: 12px;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
   background-color: var(--background);
-  max-height: 150px;
 }
 
 .blog-card:hover {
@@ -42,8 +40,9 @@
 /* 图片样式 */
 .blog-cover {
   width: 35%;
-  object-fit: cover;
-  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: contain;
+  object-position: center;
   display: center;
 }
 
@@ -53,7 +52,6 @@
   width: 60%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .blog-title {

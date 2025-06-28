@@ -1,6 +1,6 @@
 ## CCC Junior 2024 Solutions: Complete Python Walkthrough
 
-#### Written at Jun 18, 2025
+#### Written at Apr 14, 2024
 
 > *"The more you practice, the better you debug."*  
 > – CCC mindset 🔧
