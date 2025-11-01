@@ -18,16 +18,16 @@
     "short_desc": "The 2024 Canadian Computing Competition (Junior) featured five problems testing basics like..."
   },
   {
-    "title": "Teaching AI Through Game, Long tim no see 2048",
+    "title": "From Python to Browser: 2048 Gets a JavaScript Web Version! ",
     "date": "2024-01-24",
     "slug": "AI_2048_JS",
     "route": "AI_2048_JS",
     "path": "/pages/20240124_AI_2048_JS.md",
     "cover": "/images/AI_2048_JS.png",
-    "short_desc": "From a Lecture Idea to Code Sharing. 2048 is a puzzle game almost everyone recognizes—simple rules..."
+    "short_desc": "After sharing the Python version of 2048, many students asked for a web version.."
   },
   {
-    "title": "Teaching AI Through Game, Long tim no see 2048",
+    "title": "Teaching AI Through Game, Long time no see 2048",
     "date": "2024-01-15",
     "slug": "AI_2048",
     "route": "AI_2048",
