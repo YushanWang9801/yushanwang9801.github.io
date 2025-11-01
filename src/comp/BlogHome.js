@@ -5,7 +5,7 @@ import "../css/BlogPage.css";
 const BlogHome = () => {
   const [blogList, setBlogList] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const blogsPerPage = 5;
+  const blogsPerPage = 7;
 
   useEffect(() => {
     fetch("/pages/index.json")
