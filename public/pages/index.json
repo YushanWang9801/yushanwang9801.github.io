@@ -1,5 +1,14 @@
 [
   {
+    "title": "French FlashCards: A2 Level, Maintenant en ligne!",
+    "date": "2024-06-29",
+    "slug": "french_flashcard_A2",
+    "route": "french_flashcard_A2",
+    "path": "/pages/20240629_french_flashcard_A2.md",
+    "cover": "/images/french_flashcard_A2.png",
+    "short_desc": "Say hello to **A2 French vocabulary** in the flashcard app—perfect for anyone ready to move beyond basics."
+  },
+  {
     "title": "教师资格双证获取公告 | Teaching Certification Announcement",
     "date": "2024-05-18",
     "slug": "teaching_certificate",
