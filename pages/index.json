@@ -27,6 +27,24 @@
     "short_desc": "The 2024 Canadian Computing Competition (Junior) featured five problems testing basics like..."
   },
   {
+    "title": "我的2024 AST数学甄选营：从普高到G5，用我的跨学科经验帮你突围 ",
+    "date": "2024-02-11",
+    "slug": "AST_course",
+    "route": "AST_course",
+    "path": "/pages/20240211_AST_course.md",
+    "cover": "/images/AST_course.png",
+    "short_desc": "先和大家聊聊我为什么能帮你搞定 AST 数学，以及两个课表：从基础到冲刺，你总能找到适合自己的节奏"
+  },
+  {
+    "title": "AST数学备考指南：普高生冲刺G5的双轨突围方案 ",
+    "date": "2024-02-03",
+    "slug": "AST_test",
+    "route": "AST_test",
+    "path": "/pages/20240203_AST_test.md",
+    "cover": "/images/AST_test.png",
+    "short_desc": "“刷了三年高考题，面对全英文数学卷却无从下笔？” 这是多数普高生备考 AST 的共性难题。"
+  },
+  {
     "title": "From Python to Browser: 2048 Gets a JavaScript Web Version! ",
     "date": "2024-01-24",
     "slug": "AI_2048_JS",
