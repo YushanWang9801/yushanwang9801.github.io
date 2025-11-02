@@ -1,5 +1,41 @@
 [
   {
+    "title": "CCC Junior 2025 Solutions: Complete Python Walkthrough",
+    "date": "2025-04-13",
+    "slug": "ccc_junior_2025",
+    "route": "ccc_junior_2025",
+    "path": "/pages/20250413_ccc_junior_2025.md",
+    "cover": "/images/ccc_junior_2025.png",
+    "short_desc": "The 2025 Canadian Computing Competition (Junior) featured five problems spanning core concepts:"
+  },
+  {
+    "title": "Building a VSCode-Style Log Viewer: Large File Online Preview and My Solution",
+    "date": "2024-10-05",
+    "slug": "logviewer",
+    "route": "logviewer",
+    "path": "/pages/20241005_logviewer.md",
+    "cover": "/images/logviewer.png",
+    "short_desc": "As a developer, have you ever faced these scenarios: trying to open a hundreds-of-MB log file online only to watch your browser crash"
+  },
+  {
+    "title": "手搓VSCode风格日志查看器：大文件在线预览的痛点与我的破局方案",
+    "date": "2024-10-05",
+    "slug": "logviewer_cn",
+    "route": "logviewer_cn",
+    "path": "/pages/20241005_logviewer_cn.md",
+    "cover": "/images/logviewer.png",
+    "short_desc": "作为开发者，你是否遇到过这种场景：拿到一个几百MB的日志文件，想在线查看却发现浏览器直接崩溃"
+  },
+  {
+    "title": "Why Separation of Frontend and Backend Matters: Ditch Django/Flask Templates for a Better Workflow",
+    "date": "2024-08-11",
+    "slug": "seperation_frontend_backend",
+    "route": "seperation_frontend_backend",
+    "path": "/pages/20240811_seperation_front_backend.md",
+    "cover": "/images/backend_frontend_separation.png",
+    "short_desc": "作为开发者，你是否遇到过这种场景：拿到一个几百MB的日志文件，想在线查看却发现浏览器直接崩溃"
+  },
+  {
     "title": "French FlashCards: A2 Level, Maintenant en ligne!",
     "date": "2024-06-29",
     "slug": "french_flashcard_A2",
