@@ -1,12 +1,12 @@
 # Why Separation of Frontend and Backend Matters: Ditch Django/Flask Templates for a Better Workflow  
 
-If you’re just starting with web dev, tools like Django or Flask feel like magic. Their built-in templates let you mix Python logic with HTML (those `{% for %}` loops in Jinja2!) and spin up a working app in hours. It’s tempting to stick with this—why learn more tools when templates “just work”?  
+If you’re just starting with web dev, tools like Django or Flask feel like magic. Their built-in templates let you mix Python logic with HTML (those ```{% for %}``` loops in Jinja2!) and spin up a working app in hours. It’s tempting to stick with this—why learn more tools when templates “just work”?  
 
 But as a student or solo developer, your goal isn’t just to *build apps*—it’s to *grow your skills* and build apps that can scale (even if “scale” just means “you won’t hate maintaining it in 6 months”). That’s where ditching over-reliance on templates and embracing frontend-backend separation comes in. Let’s break it down like we’re chatting over coffee.  
 
 
 ## First: Why Templates Feel Great (But Trap You Later)  
-Templates are amazing for your first project. Want a to-do app? Write a Flask route that fetches tasks from a database, loop through them in a Jinja2 template with `{% for task in tasks %}`, and boom—you’ve got a working UI. No extra tools, no confusing setups.  
+Templates are amazing for your first project. Want a to-do app? Write a Flask route that fetches tasks from a database, loop through them in a Jinja2 template with ```{% for task in tasks %}```, and boom—you’ve got a working UI. No extra tools, no confusing setups.  
 
 But here’s the catch: Templates tie your frontend (what users see) to your backend (how data is stored/processed) in a messy knot. Let’s say you build a personal blog with Django templates. A few months later, you want to:  
 - Add a “like” button that updates without reloading the page.  
