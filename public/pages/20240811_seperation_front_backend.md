@@ -90,4 +90,4 @@ If you’re building a *tiny, throwaway project* (like a 1-page portfolio or a q
 ## Final Thought: Templates Are Training Wheels  
 Templates are great for your first “I built something!” moment—like training wheels on a bike. But to go faster, turn sharper, and tackle bigger hills (read: cooler projects), you need to take them off.  
 
-Separation of frontend and backend isn’t just for “pros”—it’s for *you*, the learner, to build better apps and become a more capable developer. Start small, mess up, and iterate. You’ve got this.
+Separation of frontend and backend isn’t just for “pros”—it’s for you, the learner, to build better apps and become a more capable developer. Start small, mess up, and iterate. You’ve got this.
