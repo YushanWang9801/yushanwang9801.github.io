@@ -1,135 +1,203 @@
-const blogPostPart2 = `
-## Enhancing the Flashcard App: Pronunciation, Course Navigation, and Deployment
 
-### Adding Pronunciation (Continued)
+const ai2048Blog = `## Teaching AI Through 2048: From a Lecture Idea to Code Sharing
 
-After implementing the basic Web Speech API functionality, I integrated it throughout the app:
+Last semester, I was tasked with preparing a lecture on programming and AI for high school seniors about to enter college. Staring at a blank slide deck, I felt stuck—how do you make AI approachable to students who might have only heard the term in passing? Theories felt too abstract, and generic examples seemed uninspiring. That’s when a memory from my UCSD undergrad days in CSE150B popped into my head: our final project, where we built an AI to play 2048 using the Minimax algorithm.
 
-1. **Automatic Pronunciation on Card Flip**:
-   \`\`\`javascript
-   watch(isFlipped, (newVal) => {
-     if (!newVal) {
-       speak(currentCard.value.word, 'fr-FR');
-     } else {
-       speak(currentCard.value.translation, 'en-US');
-     }
-   });
-   \`\`\`
+"Perfect," I thought. 2048 is a puzzle game almost everyone recognizes—simple rules, satisfying gameplay, but with enough depth to showcase real AI decision-making. By building the game from scratch in Python and then teaching an AI to play it, I could bridge "basic programming" and "intelligent systems" in a single demo.
 
-2. **Pronunciation Buttons** in both French and English views:
-   \`\`\`vue
-   <button @click.stop="speakWord(currentCard.word)" class="speak-button">
-     🔊 French
-   </button>
-   <button @click.stop="speakWord(currentCard.translation, 'en-US')" class="speak-button">
-     🔊 English
-   </button>
-   \`\`\`
+### From Lecture Idea to Working Demo
 
-### Building the Course Directory Page
+I dug up my old project files and refactored the core logic to make it beginner-friendly. First, I recreated the 2048 game mechanics using Pygame—clean, visual, and easy to follow. Then, I implemented the Minimax algorithm to let the AI "think" through moves: simulating future states, evaluating board quality, and choosing the optimal path. Watching the tiles auto-merge toward 2048 during testing brought back memories of debugging evaluation functions in the CSE150B lab—frustrating then, but perfect for a demo now.
 
-The course directory serves as the home page, showing all available courses and lessons:
+The lecture exceeded all expectations. When I switched from manual play to AI mode, the room erupted—students leaned forward, asking how the program "knew" which move was best, how the scoring worked, and if they could try modifying the code. By the end, a crowd gathered around my laptop, scribbling notes on the core functions. "Can you share this?" became the most frequent question.
 
-\`\`\`vue
-<template>
-  <div class="container">
-    <!-- Mobile toggle button -->
-    <button class="menu-toggle" @click="toggleSidebar" v-show="isMobile && !sidebarOpen">
-      ☰ Courses
-    </button>
+This post is my answer to them—and to anyone curious about how AI meets everyday games.
 
-    <!-- Sidebar with courses -->
-    <div class="sidebar course-list" :class="{ open: sidebarOpen }">
-      <h2 class="title">Courses</h2>
-      <ul>
-        <li v-for="key in courseKeys" 
-            :key="key" 
-            :class="{ active: key === selectedCourse }" 
-            @click="selectCourse(key)">
-          {{ courseMap[key] }}
-        </li>
-      </ul>
-    </div>
 
-    <!-- Lesson list -->
-    <div class="content lesson-list" :class="{ open: !sidebarOpen }">
-      <button class="back-button" v-if="isMobile" @click="toggleSidebar">
-        ← Back to Courses
-      </button>
-      
-      <h2 class="title">{{ selectedCourse ? courseMap[selectedCourse] : 'Select A Course' }}</h2>
-      
-      <ul v-if="lessons.length">
-        <li v-for="lesson in lessons" :key="lesson" @click="selectLesson(lesson)">
-          {{ lesson }}
-        </li>
-      </ul>
-    </div>
-  </div>
-</template>
-\`\`\`
+## 🎮 The 2048 Foundation: Building the Game
 
-Key features:
-- Responsive design with mobile-friendly sidebar toggle
-- Clean separation between courses and lessons
-- Active state highlighting for better UX
+Let’s start with the game itself. I built a Pygame-based 2048 clone with all the classic features, designed to be easy to understand and modify.
 
-### Router Configuration
+### Key Features
 
-The Vue Router handles navigation between the course directory and individual lessons:
+- Classic 2048 gameplay (tile merging, score tracking)
+- Smooth rendering with dynamic font sizes (adjusts for larger numbers)
+- Interactive UI with restart/continue buttons (with hover effects)
+- Support for both keyboard (arrow keys) and mouse input
+- Clean, responsive design with color-coded tiles
 
-\`\`\`javascript
-import { createRouter, createWebHistory } from 'vue-router'
-import CourseLesson from '../components/CourseLesson.vue'
-import FlashCardViewer from '../components/FlashcardViewer.vue'
 
-const routes = [
-  { path: '/', component: CourseLesson },
-  { path: '/lesson/:slug', component: FlashCardViewer }
-]
+### Project Structure
 
-export default createRouter({
-  history: createWebHistory('/french_flashcards/'),
-  routes
-})
-\`\`\`
+The code is split into two main files for clarity:
 
-The router uses:
-- Dynamic route parameter (\`:slug\`) for lesson URLs
-- WebHistory mode for clean URLs
-- Base path set for GitHub Pages deployment
+```
+2048_AI/
+├── assets/               # Button icons
+│   ├── restart.png
+│   └── continue.png
+├── main.py               # Core game logic (Game2048 class)
+├── utils.py              # Constants (sizes, colors, fonts)
+└── README.md             # Setup instructions
+```
 
-### Deployment to GitHub Pages
 
-After testing locally, I deployed the app to GitHub Pages:
+### Core Game Logic
 
-1. Added GitHub Pages-specific config:
-   - Set base path in Vite config
-   - Created a deploy script
+The `Game2048` class in `main.py` handles everything from rendering to tile movement. Let’s break down its key parts.
 
-2. The app is now live at:  
-   [https://yushanwang9801.github.io/french_flashcards/](https://yushanwang9801.github.io/french_flashcards/)
+#### Initialization
 
-### Future Content Plans
+We start by setting up the game window, fonts, and initial grid (with two random tiles—2 or 4):
 
-While the app infrastructure is complete, I'll be gradually adding:
-- More French vocabulary from various sources
-- Themed courses (basics, travel, business, etc.)
-- Example sentences with pronunciation
-- Progressive difficulty levels
+```python
+class Game2048:
+    def __init__(self):
+        self.width = WIDTH  # From utils.py
+        self.height = HEIGHT
+        self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
+        pygame.display.set_caption("2048")
 
-The beauty of this setup is that adding new content only requires updating the JSON data files - no code changes needed!
+        # Fonts and scoring
+        self.font = pygame.font.SysFont("Arial", FONT_SIZE, bold=True)
+        self.score = 0
+        self.best_score = 0
+        
+        # 4x4 grid (GRID_SIZE from utils.py)
+        self.grid = [[0 for _ in range(GRID_SIZE)] for _ in range(GRID_SIZE)]
+        self.add_new_tile()  # Spawn first tile
+        self.add_new_tile()  # Spawn second tile
+```
 
-## Conclusion
 
-From visa waiting period to fully functional language learning tool, this project has been both educational and practical. The technical stack proved perfect for rapid development:
+#### Tile Movement & Merging
 
-- Vue 3's Composition API made state management straightforward
-- Vite provided lightning-fast development experience
-- Web Speech API delivered pronunciation without external dependencies
-- GitHub Pages offered simple, free hosting
+The most critical part is handling tile movement (via arrow keys) and merging. The `move` method processes directions, while `merge_row` handles the logic for combining tiles:
 
-Now I can practice French anywhere, anytime - while still checking my email for that visa update, of course!
-`;
+```python
+def move(self, direction):
+    if self.game_over:
+        return False
 
-console.log(blogPostPart2)
+    moved = False
+    if direction == "left":
+        for i in range(GRID_SIZE):
+            row, did_move = self.merge_row(self.grid[i])
+            self.grid[i] = row
+            moved |= did_move
+    # Similar logic for right/up/down (omitted for brevity)
+
+    if moved:
+        self.add_new_tile()  # Spawn new tile after valid move
+        self.check_game_state()  # Check for win/lose
+    return moved
+
+def merge_row(self, row):
+    # Remove empty spaces first
+    new = [i for i in row if i != 0]
+    new += [0] * (GRID_SIZE - len(new))
+    merged = []
+    skip = False
+    moved = False
+
+    # Merge adjacent equal tiles
+    for i in range(len(new)):
+        if skip:
+            skip = False
+            continue
+        if i < len(new) - 1 and new[i] == new[i + 1]:
+            merged.append(new[i] * 2)
+            self.score += new[i] * 2  # Update score on merge
+            skip = True
+            moved = True
+        else:
+            merged.append(new[i])
+    merged += [0] * (GRID_SIZE - len(merged))
+    return merged, moved
+```
+
+
+#### Visuals & UI
+
+The `draw` method renders everything—grid, tiles, score, and buttons. Tiles use color coding from `utils.py` (e.g., 2 is light beige, 2048 is bright yellow):
+
+```python
+def draw(self):
+    self.screen.fill(BACKGROUND_COLOR)  # From utils.py
+
+    # Draw title and score panel
+    title_text = self.large_font.render("2048", True, TEXT_COLOR)
+    self.screen.blit(title_text, (20, 20))
+
+    # Render tiles with dynamic colors
+    for i in range(GRID_SIZE):
+        for j in range(GRID_SIZE):
+            val = self.grid[i][j]
+            x = start_x + GRID_PADDING + j * (TILE_SIZE + GRID_PADDING)
+            y = start_y + GRID_PADDING + i * (TILE_SIZE + GRID_PADDING)
+
+            # Use predefined colors (utils.py)
+            pygame.draw.rect(
+                self.screen,
+                TILE_COLORS.get(val, TILE_COLORS[0]),  # e.g., 2 → (238, 228, 218)
+                (x, y, TILE_SIZE, TILE_SIZE),
+                border_radius=4,
+            )
+
+            # Adjust font size for large numbers
+            if val != 0:
+                font = self.font if val < 100 else pygame.font.SysFont("Arial", FONT_SIZE - 8, bold=True)
+                text = font.render(str(val), True, TEXT_COLORS.get(val, TEXT_COLOR))
+                self.screen.blit(text, text.get_rect(center=(x + TILE_SIZE//2, y + TILE_SIZE//2)))
+```
+
+
+### 🚀 How to Run It
+
+1. **Prerequisites**: Python 3.7+ and Pygame.
+2. **Install dependencies**:
+   ```bash
+   pip install pygame
+   ```
+3. **Clone and run**:
+   ```bash
+   git clone [repository-url]
+   cd 2048_AI
+   python main.py
+   ```
+
+Controls:
+- Arrow keys to move tiles
+- "Restart" button to reset the game
+- "Continue" button (appears after reaching 2048) to keep playing
+
+
+## 🤖 The AI Part: Minimax in Action
+
+The real magic for the lecture was adding an AI player using the Minimax algorithm. Here’s the high-level idea:
+
+- **Minimax**: A decision-making algorithm where the AI (maximizer) tries to maximize its score, while assuming the "game" (minimizer) will spawn the worst possible new tiles (e.g., a 4 in a bad position).
+- **Evaluation Function**: Rates board quality based on factors like:
+  - Total score
+  - Number of empty tiles (more = better)
+  - Monotonicity (tiles increasing/decreasing in a direction, easier to merge)
+  - Smoothness (similar adjacent values)
+
+During the lecture, I showed how tweaking the evaluation function drastically changes the AI’s performance—perfect for demonstrating how "intelligence" in code is often just clever scoring.
+
+
+## 📄 License
+
+This project is licensed under the MIT License—feel free to modify and share!
+
+
+## 🔮 Next Steps
+
+For students looking to experiment:
+1. Add animations for tile movement (try Pygame’s `pygame.transform`).
+2. Improve the AI with alpha-beta pruning (to speed up Minimax).
+3. Add save/load functionality (using `pickle` or JSON).
+
+Whether you’re a soon-to-be freshman or just curious about AI, this project shows that even "smart" programs start with simple building blocks. Download the code, break things, and see what you can create—that’s how real learning happens.
+
+Happy coding!`;
