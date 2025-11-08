@@ -1,6 +1,6 @@
 # Why Separation of Frontend and Backend Matters: Ditch Django/Flask Templates for a Better Workflow  
 
-If you’re just starting with web dev, tools like Django or Flask feel like magic. Their built-in templates let you mix Python logic with HTML (those `{% for %}` loops in Jinja2!) and spin up a working app in hours. It’s tempting to stick with this—why learn more tools when templates “just work”?  
+If you’re just starting with web dev, tools like Django or Flask feel like magic. Their built-in templates let you mix Python logic with HTML (those loops in Jinja2!) and spin up a working app in hours. It’s tempting to stick with this—why learn more tools when templates “just work”?  
 
 But as a student or solo developer, your goal isn’t just to *build apps*—it’s to *grow your skills* and build apps that can scale (even if “scale” just means “you won’t hate maintaining it in 6 months”). That’s where ditching over-reliance on templates and embracing frontend-backend separation comes in. Let’s break it down like we’re chatting over coffee.  
 
