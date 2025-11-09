@@ -8,11 +8,6 @@ But as a student or solo developer, your goal isn’t just to *build apps*—it�
 ## First: Why Templates Feel Great (But Trap You Later)  
 Templates are amazing for your first project. Want a to-do app? Write a Flask route that fetches tasks from a database, loop through them in a Jinja2 template with 
 
-
-```jinja2
-{% for task in tasks %}
-```
-
 and boom—you’ve got a working UI. No extra tools, no confusing setups.  
 
 But here’s the catch: Templates tie your frontend (what users see) to your backend (how data is stored/processed) in a messy knot. Let’s say you build a personal blog with Django templates. A few months later, you want to:  
