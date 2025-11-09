@@ -1,0 +1,272 @@
+[
+  {
+    "title": "CCC Junior 2025 Solutions: Complete Python Walkthrough",
+    "date": "2025-04-13",
+    "slug": "ccc_junior_2025",
+    "route": "ccc_junior_2025",
+    "path": "/pages/20250413_ccc_junior_2025.md",
+    "cover": "/images/ccc_junior_2025.png",
+    "short_desc": "The 2025 Canadian Computing Competition (Junior) featured five problems spanning core concepts:"
+  },
+  {
+    "title": "Building a VSCode-Style Log Viewer: Large File Online Preview and My Solution",
+    "date": "2024-10-05",
+    "slug": "logviewer",
+    "route": "logviewer",
+    "path": "/pages/20241005_logviewer.md",
+    "cover": "/images/logviewer.png",
+    "short_desc": "As a developer, have you ever faced these scenarios: trying to open a hundreds-of-MB log file online only to watch your browser crash"
+  },
+  {
+    "title": "手搓VSCode风格日志查看器：大文件在线预览的痛点与我的破局方案",
+    "date": "2024-10-05",
+    "slug": "logviewer_cn",
+    "route": "logviewer_cn",
+    "path": "/pages/20241005_logviewer_cn.md",
+    "cover": "/images/logviewer.png",
+    "short_desc": "作为开发者，你是否遇到过这种场景：拿到一个几百MB的日志文件，想在线查看却发现浏览器直接崩溃"
+  },
+  {
+    "title": "Why Separation of Frontend and Backend Matters: Ditch Django/Flask Templates for a Better Workflow",
+    "date": "2024-08-11",
+    "slug": "seperation_frontend_backend",
+    "route": "seperation_frontend_backend",
+    "path": "/pages/20240811_seperation_front_backend.md",
+    "cover": "/images/backend_frontend_separation.png",
+    "short_desc": "作为开发者，你是否遇到过这种场景：拿到一个几百MB的日志文件，想在线查看却发现浏览器直接崩溃"
+  },
+  {
+    "title": "French FlashCards: A2 Level, Maintenant en ligne!",
+    "date": "2024-06-29",
+    "slug": "french_flashcard_A2",
+    "route": "french_flashcard_A2",
+    "path": "/pages/20240629_french_flashcard_A2.md",
+    "cover": "/images/french_flashcard_A2.png",
+    "short_desc": "Say hello to **A2 French vocabulary** in the flashcard app—perfect for anyone ready to move beyond basics."
+  },
+  {
+    "title": "教师资格双证获取公告 | Teaching Certification Announcement",
+    "date": "2024-05-18",
+    "slug": "teaching_certificate",
+    "route": "teaching_certificate",
+    "path": "/pages/20240518_teach_certificate.md",
+    "cover": "/images/teach_certificate.png",
+    "short_desc": "本人已于2024年通过中国高级中学教师资格证全部考核，同步获得数学、英语双学科资质, I am honored to announce the successful attainment of dual teaching certifications for Senior High School (China)"
+  },
+  {
+    "title": "CCC Junior 2024 Solutions: Complete Python Walkthrough",
+    "date": "2024-04-14",
+    "slug": "ccc_junior_2024",
+    "route": "ccc_junior_2024",
+    "path": "/pages/20240414_ccc_junior_2024.md",
+    "cover": "/images/ccc_junior_2024.png",
+    "short_desc": "The 2024 Canadian Computing Competition (Junior) featured five problems testing basics like..."
+  },
+  {
+    "title": "我的2024 AST数学甄选营：从普高到G5，用我的跨学科经验帮你突围 ",
+    "date": "2024-02-11",
+    "slug": "AST_course",
+    "route": "AST_course",
+    "path": "/pages/20240211_AST_course.md",
+    "cover": "/images/AST_course.png",
+    "short_desc": "先和大家聊聊我为什么能帮你搞定 AST 数学，以及两个课表：从基础到冲刺，你总能找到适合自己的节奏"
+  },
+  {
+    "title": "AST数学备考指南：普高生冲刺G5的双轨突围方案 ",
+    "date": "2024-02-03",
+    "slug": "AST_test",
+    "route": "AST_test",
+    "path": "/pages/20240203_AST_test.md",
+    "cover": "/images/AST_test.png",
+    "short_desc": "“刷了三年高考题，面对全英文数学卷却无从下笔？” 这是多数普高生备考 AST 的共性难题。"
+  },
+  {
+    "title": "From Python to Browser: 2048 Gets a JavaScript Web Version! ",
+    "date": "2024-01-24",
+    "slug": "AI_2048_JS",
+    "route": "AI_2048_JS",
+    "path": "/pages/20240124_AI_2048_JS.md",
+    "cover": "/images/AI_2048_JS.png",
+    "short_desc": "After sharing the Python version of 2048, many students asked for a web version.."
+  },
+  {
+    "title": "Teaching AI Through Game, Long time no see 2048",
+    "date": "2024-01-15",
+    "slug": "AI_2048",
+    "route": "AI_2048",
+    "path": "/pages/20240115_AI_2048.md",
+    "cover": "/images/AI_2048.png",
+    "short_desc": "From a Lecture Idea to Code Sharing. 2048 is a puzzle game almost everyone recognizes—simple rules..."
+  },
+  {
+    "title": "🌐 Website + Project Updates – November 2023",
+    "date": "2023-11-01",
+    "slug": "port_update_2023_11_01",
+    "route": "port_update_2023_11_01",
+    "path": "/pages/20231101_port_update_2023.md",
+    "cover": "/images/port_update_2023.png",
+    "short_desc": "Hey everyone! Here are some updates regarding my website and related projects. These changes focus on performance, accessibility, and better long-term maintainability across devices and platforms."
+  },
+  {
+    "title": "How to Prepare for BMO Round 1: Teaching Guide + Study Advice",
+    "date": "2023-10-24",
+    "slug": "BMO_preperation",
+    "route": "BMO_preperation",
+    "path": "/pages/20231024_BMO.md",
+    "cover": "/images/BMO.jpg",
+    "short_desc": "The British Mathematical Olympiad (BMO) Round 1 is not just an exam."
+  },
+  {
+    "title": "Turning a Page: Teaching",
+    "date": "2023-08-18",
+    "slug": "turning_a_page",
+    "route": "turning_a_page",
+    "path": "/pages/20230818_teaching.md",
+    "cover": "/images/turning.png",
+    "short_desc": "While disappointing, it gave me a chance to reassess, reset, and think carefully about the next phase."
+  },
+  {
+    "title": "CCC Junior 2022 Solutions: Complete Python Walkthrough",
+    "date": "2023-06-27",
+    "slug": "ccc_junior_2022",
+    "route": "ccc_junior_2022",
+    "path": "/pages/20230627_ccc_junior_2022.md",
+    "cover": "/images/ccc_junior_2022.png",
+    "short_desc": "The 2022 Canadian Computing Competition Junior division featured innovative problems..."
+  },
+  {
+    "title": "CCC Junior 2023 Solutions: Complete Python Walkthrough",
+    "date": "2023-06-26",
+    "slug": "ccc_junior_2023",
+    "route": "ccc_junior_2023",
+    "path": "/pages/20230626_ccc_junior_2023.md",
+    "cover": "/images/ccc_junior_2023.png",
+    "short_desc": "The 2023 Canadian Computing Competition Junior division featured 5 problems testing fundamental programming skills..."
+  },
+  {
+    "title": "My CCC Junior Lecture Gig in Vancouver",
+    "date": "2023-06-24",
+    "slug": "ccc_junior",
+    "route": "ccc_junior",
+    "path": "/pages/20230624_ccc_junior.md",
+    "cover": "/images/ccc_junior.png",
+    "short_desc": "Why Input/Output Mastery could be Your Secret Weapon."
+  },
+  {
+    "title": "Vue + Vite: French FlashCard (Published)",
+    "date": "2023-06-18",
+    "slug": "french-flashcard-published",
+    "route": "french-flashcard-published",
+    "path": "/pages/20230618_french_flashcard3.md",
+    "cover": "/images/french_flashcard3.png",
+    "short_desc": "French Clashcard published with LEA 800 and Taxi A1 vocab list."
+  },
+  {
+    "title": "Vue + Vite: French FlashCard (Part II)",
+    "date": "2023-06-14",
+    "slug": "french-flashcard-part2",
+    "route": "french-flashcard-part2",
+    "path": "/pages/20230614_french_flashcard2.md",
+    "cover": "/images/french_flashcard.png",
+    "short_desc": "Wrapping on the flashcard part and building a category page."
+  },
+  {
+    "title": "Vue + Vite: French FlashCard (Part I)",
+    "date": "2023-06-11",
+    "slug": "french-flashcard-part1",
+    "route": "french-flashcard-part1",
+    "path": "/pages/20230611_french_flashcard1.md",
+    "cover": "/images/french_flashcard.png",
+    "short_desc": "While waiting for my work visa application, let's start to learn French."
+  },
+  {
+    "title": "AllRGB Image Generator with Streamlit",
+    "date": "2023-05-29",
+    "slug": "AllRGB-streamlit",
+    "route": "AllRGB-streamlit",
+    "path": "/pages/20230529_allRGB2.md",
+    "cover": "/images/allRGB.png",
+    "short_desc": "Today, I will be making a website that performs ALLRGB generation."
+  },
+  {
+    "title": "ThreeJs: Redbull Racing RB6 (Part III)",
+    "date": "2023-04-16",
+    "slug": "rb6-dribble-part3",
+    "route": "rb6-dribble-part3",
+    "path": "/pages/20230416_rb6_dribble3.md",
+    "cover": "/images/rb6_dribble.gif",
+    "short_desc": "This article will create a Formula One Redbull Racing Header by using ThreeJS"
+  },
+  {
+    "title": "ThreeJs: Redbull Racing RB6 (Part II)",
+    "date": "2023-04-15",
+    "slug": "rb6-dribble-part2",
+    "route": "rb6-dribble-part2",
+    "path": "/pages/20230415_rb6_dribble2.md",
+    "cover": "/images/rb6_dribble.gif",
+    "short_desc": "This article will create a Formula One Redbull Racing Header by using ThreeJS"
+  },
+  {
+    "title": "ThreeJs: Redbull Racing RB6 (Part I)",
+    "date": "2023-04-13",
+    "slug": "rb6-dribble-part1",
+    "route": "rb6-dribble-part1",
+    "path": "/pages/20230413_rb6_dribble1.md",
+    "cover": "/images/rb6_dribble.gif",
+    "short_desc": "This article will create a Formula One Redbull Racing Header by using ThreeJS"
+  },
+  {
+    "title": "AllRGB Image Generator",
+    "date": "2023-03-27",
+    "slug": "AllRGB-image-generator",
+    "route": "AllRGB-image-generator",
+    "path": "/pages/20230327_allRGB1.md",
+    "cover": "/images/allRGB.png",
+    "short_desc": "The ALLRGB image is to generate an image that uses all 16,777,216 colors and exactly once."
+  },
+  {
+    "title": "Pygame: Mario Run (Part III)",
+    "date": "2023-03-05",
+    "slug": "pygame-mario-part3",
+    "route": "pygame-mario-part3",
+    "path": "/pages/20230305_pygame-mario3.md",
+    "cover": "/images/mario.gif",
+    "short_desc": "We are almost finish building mario run..."
+  },
+  {
+    "title": "Pygame: Mario Run (Part II)",
+    "date": "2023-03-04",
+    "slug": "pygame-mario-part2",
+    "route": "pygame-mario-part2",
+    "path": "/pages/20230304_pygame-mario2.md",
+    "cover": "/images/mario.gif",
+    "short_desc": "we will continue to build a simple Mario run game with Pygame part II"
+  },
+  {
+    "title": "Pygame: Mario Run (Part I)",
+    "date": "2023-03-03",
+    "slug": "pygame-mario-part1",
+    "route": "pygame-mario-part1",
+    "path": "/pages/20230303_pygame-mario1.md",
+    "cover": "/images/mario.gif",
+    "short_desc": "This article will show how to use Pygame to build a simple Mario run game"
+  },
+  {
+    "title": "OpenCV: Virtual Keyboard Project (Part II)",
+    "date": "2023-02-11",
+    "slug": "virtual-keyboard-partII",
+    "route": "virtual-keyboard-partII",
+    "path": "/pages/20230211_Virtual_keyboard2.md",
+    "cover": "/images/Virtual_Keyboard.jpg",
+    "short_desc": "Today, continue on Virtual Keyboard Project."
+  },
+  {
+    "title": "OpenCV: Virtual Keyboard Project (Part I)",
+    "date": "2023-02-09",
+    "slug": "virtual-keyboard-partI",
+    "route": "virtual-keyboard-partI",
+    "path": "/pages/20230209_Virtual_keyboard1.md",
+    "cover": "/images/Virtual_Keyboard.jpg",
+    "short_desc": "Today, we are going to use OpenCV to build this amazing Virtual Keyboard Project."
+  }
+]
