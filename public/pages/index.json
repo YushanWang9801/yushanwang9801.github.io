@@ -27,13 +27,22 @@
     "short_desc": "作为开发者，你是否遇到过这种场景：拿到一个几百MB的日志文件，想在线查看却发现浏览器直接崩溃"
   },
   {
+    "title": "Why NVM (Node Version Manager) Matters: A Smooth Guide to Upgrading Node 14 to 18",
+    "date": "2024-08-11",
+    "slug": "nvm_node_version_manager",
+    "route": "nvm_node_version_manager",
+    "path": "/pages/20240903_nvm.md",
+    "cover": "/images/nvm.png",
+    "short_desc": "If you’re new to Node.js, installing it directly from the official website feels straightforward—download"
+  },
+  {
     "title": "Why Separation of Frontend and Backend Matters: Ditch Django/Flask Templates for a Better Workflow",
     "date": "2024-08-11",
     "slug": "seperation_frontend_backend",
     "route": "seperation_frontend_backend",
     "path": "/pages/20240811_seperation_front_backend.md",
     "cover": "/images/backend_frontend_separation.png",
-    "short_desc": "作为开发者，你是否遇到过这种场景：拿到一个几百MB的日志文件，想在线查看却发现浏览器直接崩溃"
+    "short_desc": "If you’re just starting with web dev, tools like Django or Flask feel like magic. "
   },
   {
     "title": "French FlashCards: A2 Level, Maintenant en ligne!",
