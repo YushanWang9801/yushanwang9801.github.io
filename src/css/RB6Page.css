@@ -1,0 +1,10 @@
+/* RB6Page — isolated styles only */
+
+/* Hide scrollbar */
+.rb6-hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.rb6-hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -1,0 +1,26 @@
+.GalleryTitle {
+    font-family: Optima, "Comic Sans MS", "Comic Sans", cursive, 
+                    Roboto, Helvetica, Arial, sans-serif;
+}
+
+
+.GalleryTitle h2, .GalleryTitle span{
+    text-align: center;
+}
+.GalleryTitle h2{
+    margin-top: 60px;
+    font-size: 2.6rem;
+    color: var(--primary);
+    margin-bottom: 30px;
+    line-height: 1.05em;
+    font-weight: 100;
+    letter-spacing: normal;
+}
+
+.GalleryTitle span{
+    color: var(--secondary);
+    font-size: 1.6rem;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 30px;
+}

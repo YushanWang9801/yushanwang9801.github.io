@@ -1,0 +1,86 @@
+/* src/css/HeaderWang.css */
+
+.custom-switch {
+    width: 80px;
+    height: 32px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid var(--secondary);
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    background-image: url("/asset-images/bg2.jpg"); /* 默认白天背景 */
+    transition: background-image 0.7s ease-in-out;
+}
+
+.custom-switch:checked {
+    background-image: url("/asset-images/bg.jpg"); /* 勾选后黑夜背景 */
+}
+
+/* 隐形的滑块载体 */
+.custom-switch:after {
+    content: '';
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    position: absolute;
+    left: 3px;
+    top: 1px;
+    background: rgba(255, 255, 255, 0.05); /* 几乎全透明 */
+    transform: translateX(0px);
+    transition: transform 0.5s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+    pointer-events: none;
+}
+
+.custom-switch:checked:after {
+    transform: translateX(36px); /* 对应宽度位移 */
+}
+
+/* 太阳与月亮的灵魂切换 */
+.custom-switch:before {
+    content: '';
+    width: 14px; /* 太阳调小了 */
+    height: 14px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+    
+    /* 默认状态：小太阳 */
+    background-color: #f5daaa;
+    box-shadow: 0px 0px 6px #f5deb4, 0px 0px 12px #f5deb4;
+    filter: blur(0.3px);
+}
+
+/* 勾选状态（Dark 模式）：变成月亮 */
+.custom-switch:checked:before {
+    transform: translateX(35px) rotate(-15deg);
+    background-color: transparent;
+    /* 核心：用白色阴影画出月牙 */
+    box-shadow: 5px -2px 0px 0px #fff; 
+    filter: blur(0px);
+}
+
+/* 让胶囊导航条的边框更有金属感/亮度 */
+.md\:flex nav div {
+    border-color: var(--secondary);
+    box-shadow: 0 0 10px rgba(var(--secondary-rgb), 0.1); /* 需要你在 index.css 定义 rgb 变量，或者直接用半透明色 */
+}
+
+/* 让 Switch 的边框在暗色模式下更亮 */
+.dark .custom-switch {
+    border-color: var(--primary);
+    filter: drop-shadow(0 0 5px var(--primary-half)); /* 增加光晕感 */
+}
+
+/* 强制增强文字平滑度，让粗体看起来更精致 */
+header {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

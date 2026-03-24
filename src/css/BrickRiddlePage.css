@@ -1,0 +1,10 @@
+/* BrickRiddlePage — isolated styles */
+
+/* Hide scrollbar */
+.brick-hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.brick-hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

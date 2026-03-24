@@ -1,0 +1,19 @@
+/* F1InSchoolsPage — isolated styles, no global section override */
+
+/* Hide scrollbar */
+.f1-hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.f1-hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ── Thumbnail sidebar scrollbar ── */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -1,0 +1,106 @@
+/* --- 基础动画定义 --- */
+
+@keyframes nameUp {
+  0% { transform: translateY(40px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes projectFade {
+  0% { opacity: 0; filter: blur(10px); transform: scale(1.05); }
+  100% { opacity: 1; filter: blur(0); transform: scale(1); }
+}
+
+/* --- 动画类应用 --- */
+
+.animate-name-up {
+  animation: nameUp 1.1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.animate-in {
+  animation: projectFade 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* --- 滚动条隐藏 --- */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* --- 响应式断点优化 --- */
+
+/* 强制 Section 占据全屏且不溢出 */
+section {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden; /* 防止内容撑破 Section 导致 Snap 失效 */
+}
+
+/* 针对 Experience Section 的内容包裹层 */
+.section-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* tabs 与 header 之间留出更稳定的间距 */
+  height: 100%;
+  padding-top: 104px; /* 桌面端进一步拉开与 header 的距离 */
+  padding-bottom: 18px;
+}
+
+@media (max-width: 768px) {
+  /* 移动端标题适配 */
+  .hero-title {
+    font-size: 18vw !important;
+    line-height: 0.85;
+  }
+
+  /* 选项卡按钮在移动端横向滚动 */
+  .tabs-container {
+    justify-content: flex-start !important;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
+    margin-top: 6px !important;
+  }
+
+  /* 移动端列表项布局 */
+  .grid-cols-12 {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px;
+    padding: 1.5rem 0 !important;
+  }
+
+  .min-h-\[460px\] {
+    min-height: auto !important; /* 移动端取消固定高度限制 */
+  }
+
+  .experience-section {
+    min-height: calc(100dvh - 72px);
+    overflow: visible;
+  }
+
+  .experience-section .section-content-wrapper {
+    padding-top: 74px;
+    padding-bottom: 12px;
+  }
+
+  /* 移动端隐藏不必要的装饰 */
+  .hidden-mobile {
+    display: none !important;
+  }
+}
+
+/* 选项卡交互 */
+button {
+  transition: all 0.3s ease;
+}
+button:hover {
+  letter-spacing: 0.15em;
+}

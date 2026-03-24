@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+/* 1. 自定义字体声明 (确保文件已放进 public/fonts) */
+@font-face {
+  font-family: 'Optima';
+  src: url('/fonts/OPTIMA.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 2. 定义 Tailwind 主题变量 */
+@theme {
+  --font-optima: "Optima", "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+
+  /* 这样你就可以用 text-primary, bg-background 等类名了 */
+  --color-background: var(--background);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-merc-red: var(--merc-red);
+  --font-size-huge: 5rem;
+  --tracking-tighter: -0.05em;
+}
+
+/* 3. 基础变量与全局样式 */
+@layer base {
+  :root {
+    /* 默认状态（亮色模式，因为我们逻辑是 .dark 时切换） */
+    --background: #f2f4f2;
+    --secondary: #3d3d3d;
+    --primary: #00A19C;
+    --accent: #ebeaee;
+    --merc-red: rgba(129, 30, 63, 0.4);
+  }
+
+  /* 当 HTML 拥有 .dark 类时（暗色模式） */
+  .dark {
+    --background: #111111;
+    --secondary: #c6c6c6;
+    --primary: #00A19C;
+    --accent: #3d3d3d;
+  }
+
+  body {
+    /* @apply 必须放在这里，确保 Tailwind 变量生效 */
+    @apply font-optima antialiased bg-background text-secondary transition-colors duration-300;
+    margin: 0;
+  }
+
+  ::selection {
+    background-color: var(--merc-red);
+    color: #ebeaee;
+  }
+}
+
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}

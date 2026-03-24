@@ -1,0 +1,10 @@
+/* MaydayConcertPage — isolated styles */
+
+/* Hide scrollbar */
+.concert-hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.concert-hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

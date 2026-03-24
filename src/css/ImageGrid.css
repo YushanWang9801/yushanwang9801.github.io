@@ -1,0 +1,69 @@
+/* 瀑布流核心 */
+.masonry-grid {
+  column-count: 3; /* 默认 3 列 */
+  column-gap: 1.5rem;
+  width: 100%;
+}
+
+/* 响应式调整列数 */
+@media (max-width: 1100px) {
+  .masonry-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .masonry-grid {
+    column-count: 1;
+  }
+}
+
+.masonry-item {
+  display: inline-block; /* 极其重要：防止图片跨列断裂 */
+  width: 100%;
+}
+
+/* 去掉之前的黑白滤镜，只保留轻微透明度或直接显示 */
+.masonry-item img {
+  display: block;
+  width: 100%;
+  border-radius: 2px; /* 极小圆角增加精致感 */
+  will-change: transform; /* 优化性能 */
+}
+
+/* 隐藏滚动条 */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* 隐藏滚动条，但保持滚动功能 */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* 优化右侧 Masonry 间距 */
+.masonry-grid {
+  column-count: 3;
+  column-gap: 2rem; /* 增加间距感，更像画廊 */
+}
+
+@media (max-width: 1024px) {
+  .masonry-grid { column-count: 2; }
+}
+@media (max-width: 640px) {
+  .masonry-grid { column-count: 1; }
+}
+
+/* 确保图片加载时的平滑感 */
+.masonry-item img {
+  border-radius: 0; /* 保持硬朗的直角风格 */
+  transition: opacity 0.5s ease;
+}
