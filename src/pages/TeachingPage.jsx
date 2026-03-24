@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { experienceData } from '../components/Experience.js';
 import '../css/TeachingPage.css';
 
@@ -7,8 +8,6 @@ const TeachingPage = () => {
   const [isAnimating, setIsAnimating] = useState(true);
   const totalHours = Math.round(experienceData.teaching.reduce((sum, item) => sum + item.hours, 0));
   const animationRef = useRef(null);
-  const scrollContainerRef = useRef(null);
-  const TOP_CLEARANCE_PX = 72;
 
   useEffect(() => {
     const duration = 2000;
@@ -62,19 +61,19 @@ const TeachingPage = () => {
           scrollbar-width: none;
         }
       `}</style>
+
       <div
-        ref={scrollContainerRef}
         className="teaching-scroll-container"
         style={{
-          marginTop: `${TOP_CLEARANCE_PX}px`,
+          marginTop: '72px',
           width: '100%',
-          height: `calc(100vh - ${TOP_CLEARANCE_PX}px)`,
+          height: 'calc(100vh - 72px)',
           overflowY: 'auto',
           overflowX: 'hidden',
           background: 'var(--color-background, #0a0a0a)'
         }}
       >
-        <div className="max-w-[1200px] mx-auto px-8 sm:px-12 pt-16 md:pt-20 pb-12">
+        <div className="max-w-[1200px] mx-auto px-8 sm:px-12 pt-12 md:pt-16 pb-12">
           
           {/* Hero Section - Total Hours Animation */}
           <div className="mb-16 md:mb-20">

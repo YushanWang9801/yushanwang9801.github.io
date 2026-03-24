@@ -29,7 +29,7 @@ export const experienceData = {
       role: "React · Vite · Tailwind",
       time: "2025",
       cover: "/project-images/09.png",
-      link: "https://github.com/YushanWang9801/cafe-at-the-worlds-end",
+      link: "/project/CafeAtWorldsEnd",
       intro: "一个极简主义的 AI 对话单页应用。全屏深色渐变背景，衬线体字体，Framer Motion 动画，阅后即焚聊天体验，AES-256-CBC 加密存储 API 密钥。",
       detail: ""
     },

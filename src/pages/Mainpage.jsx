@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import "../css/Mainpage.css";
 import { experienceData } from '../components/Experience.js';
 import GalleryPreview from '../components/GalleryPreview';
@@ -128,17 +129,20 @@ const Mainpage = () => {
               <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center animate-in">
                 <div className="md:col-span-6 divide-y divide-secondary/10 border-b border-secondary/10">
                   {displayProject.map((item, i) => (
-                    <div
+                    <Link
                       key={i}
+                      to={item.link || '/project'}
                       onMouseEnter={() => setProjectIndex(i)}
-                      className={`flex justify-between items-center py-3 px-4 cursor-pointer transition-all border-l-2 ${projectIndex === i ? 'border-secondary bg-secondary/5' : 'border-transparent'
+                      onClick={() => setProjectIndex(i)}
+                      className={`flex justify-between items-center py-3 px-4 cursor-pointer transition-all border-l-2 hover:bg-secondary/[0.02] ${projectIndex === i ? 'border-secondary bg-secondary/5' : 'border-transparent'
                         }`}
                     >
                       <div className="flex flex-col">
                         <span className="font-bold text-sm md:text-base md:text-lg text-secondary">{item.title}</span>
                         <span className="text-[9px] md:text-xs text-secondary uppercase tracking-wider">{item.role}</span>
                       </div>
-                    </div>
+                      <span className="text-secondary/40 group-hover:translate-x-1 transition-transform">→</span>
+                    </Link>
                   ))}
                 </div>
                 <div className="md:col-span-6 hidden md:block">

@@ -14,6 +14,8 @@ import VirtualKeyboardPage from './pages/VirtualKeyboardPage';
 import AI2048Page from './pages/AI2048Page';
 import FrenchFlashcardPage from './pages/FrenchFlashcardPage';
 import TeachingPage from './pages/TeachingPage';
+import CafeAtWorldsEndPage from './pages/CafeAtWorldsEndPage';
+import MePage from './pages/MePage';
 
 function App() {
   return (
@@ -43,10 +45,12 @@ function App() {
           <Route path="/project/VirtualKeyboard" element={<VirtualKeyboardPage />} />
           <Route path="/project/AI2048" element={<AI2048Page />} />
           <Route path="/project/FrenchFlashcard" element={<FrenchFlashcardPage />} />
+          <Route path="/project/CafeAtWorldsEnd" element={<CafeAtWorldsEndPage />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<BlogPage />} />
           <Route path="/teaching" element={<TeachingPage />} />
+          <Route path="/me" element={<MePage />} />
         </Routes>
       </main>
     </div>

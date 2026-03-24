@@ -1,0 +1,10 @@
+/* CafeAtWorldsEndPage — isolated styles */
+
+/* Hide scrollbar */
+.cafe-hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.cafe-hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
