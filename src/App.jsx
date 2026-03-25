@@ -16,6 +16,7 @@ import FrenchFlashcardPage from './pages/FrenchFlashcardPage';
 import TeachingPage from './pages/TeachingPage';
 import CafeAtWorldsEndPage from './pages/CafeAtWorldsEndPage';
 import MePage from './pages/MePage';
+import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
           <Route path="/blog/:slug" element={<BlogPage />} />
           <Route path="/teaching" element={<TeachingPage />} />
           <Route path="/me" element={<MePage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
     </div>

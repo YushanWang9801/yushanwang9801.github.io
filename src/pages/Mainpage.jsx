@@ -169,9 +169,9 @@ const Mainpage = () => {
 
                 {/* View All Button */}
                 <div className="mt-6 text-right">
-                  <a href="/teaching" className="group flex items-center justify-end gap-3 text-[10px] font-bold uppercase tracking-[0.2em] text-secondary transition-all">
+                  <Link to="/teaching" className="group flex items-center justify-end gap-3 text-[10px] font-bold uppercase tracking-[0.2em] text-secondary transition-all">
                     VIEW ALL <span className="text-lg group-hover:translate-x-2 transition-transform">→</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             )}
@@ -179,9 +179,9 @@ const Mainpage = () => {
             {/* View All Button - 修复版：位置正确 + 高亮不透明 */}
             {activeTab === 'project' && (
               <div className="mt-4 text-right">
-                <a href="/project" className="group flex items-center justify-end gap-3 text-[10px] font-bold uppercase tracking-[0.2em] text-secondary transition-all">
+                <Link to="/project" className="group flex items-center justify-end gap-3 text-[10px] font-bold uppercase tracking-[0.2em] text-secondary transition-all">
                   VIEW ALL <span className="text-lg group-hover:translate-x-2 transition-transform">→</span>
-                </a>
+                </Link>
               </div>
             )}
           </div>
