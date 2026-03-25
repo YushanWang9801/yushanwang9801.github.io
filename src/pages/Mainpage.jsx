@@ -161,7 +161,7 @@ const Mainpage = () => {
                     <div className="col-span-10 md:col-span-9 text-xs md:text-sm text-secondary truncate">
                       {item.course}
                     </div>
-                    <div className="col-span-2 md:col-span-3 text-right text-xs md:text-sm font-mono text-secondary">
+                    <div className="col-span-2 md:col-span-3 text-right text-xs md:text-sm font-mono text-secondary hidden md:block">
                       {item.hours}h
                     </div>
                   </div>
